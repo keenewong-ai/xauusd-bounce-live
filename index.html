@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>反彈 Live · 本周留意</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>反彈 Live</h1>
+        <p class="sub">XAUUSD／JPN225／EURUSD／BTCUSD／HK50 · Yahoo（非 Pepperstone）· 約每 4 小時更新</p>
+      </div>
+      <div class="actions">
+        <button id="export" class="btn" type="button" disabled>匯出篩選結果</button>
+      </div>
+    </header>
+
+    <section class="watch" id="watchSection">
+      <div class="watch-head">
+        <h2>本周正在留意 Symbol</h2>
+        <div class="watch-meta">
+          <span id="weekLabel">week —</span>
+          <span id="updatedLabel">更新 —</span>
+        </div>
+      </div>
+      <div id="watchChips" class="chips"></div>
+      <p id="watchEmpty" class="watch-empty">本周尚未有新嘅反彈成功。</p>
+    </section>
+
+    <nav class="tabs" role="tablist">
+      <button type="button" class="tab active" data-view="hist" role="tab" aria-selected="true">A · 歷史反彈（取消 WO）</button>
+      <button type="button" class="tab" data-view="levels" role="tab" aria-selected="false">B · 即時有效水位</button>
+    </nav>
+
+    <section class="legend" id="legendHist">
+      <div><strong>A 規則</strong>：第一次觸及仍生效關卡 · 前瞻 1／3／5 根日線 · 反彈 ≥ 0.5×ATR(14) · <strong>唔用 WO 過濾</strong></div>
+      <div><strong>預設區間</strong>：滾動近 3 個月（以最新 refresh 為準）</div>
+      <div><strong>留意清單</strong>：每次出現新 bounce_ok 會加入「本周正在留意」；每個 ISO 周一（week opening）重置</div>
+    </section>
+    <section class="legend hidden" id="legendLevels">
+      <div><strong>B 規則</strong>：仍未破嘅 gap／SH／SL，相對 <strong>Yahoo 最新收市</strong>仍喺正確一邊</div>
+      <div><strong>用途</strong>：而家仲可以盯嘅關卡（唔係歷史觸及日 list）</div>
+      <div><strong>asof</strong>：見 meta／表內 asof 欄</div>
+    </section>
+
+    <section class="filters">
+      <label>品種
+        <select id="filterSymbol">
+          <option value="">全部</option>
+          <option value="XAUUSD">XAUUSD</option>
+          <option value="JPN225">JPN225</option>
+          <option value="EURUSD">EURUSD</option>
+          <option value="BTCUSD">BTCUSD</option>
+          <option value="HK50">HK50</option>
+        </select>
+      </label>
+      <label>來源
+        <select id="filterSource">
+          <option value="">全部</option>
+          <option value="fvg">低效率 (fvg)</option>
+          <option value="swing">Swing</option>
+        </select>
+      </label>
+      <label>方向
+        <select id="filterSide">
+          <option value="">全部</option>
+          <option value="sell">賣方低效率</option>
+          <option value="buy">買方低效率</option>
+          <option value="sh">Swing High</option>
+          <option value="sl">Swing Low</option>
+        </select>
+      </label>
+      <label id="fromWrap">由
+        <input id="from" type="date" />
+      </label>
+      <label id="toWrap">至
+        <input id="to" type="date" />
+      </label>
+      <div class="count" id="count">0 筆</div>
+    </section>
+
+    <section class="table-wrap">
+      <table>
+        <thead id="thead"></thead>
+        <tbody id="tbody"></tbody>
+      </table>
+      <div id="empty" class="empty">載入中…</div>
+    </section>
+
+    <footer>
+      <span id="meta">未載入資料</span>
+      <span class="foot-note">Live Yahoo · hist=取消 WO · B=相對最新收 · watchlist 每 ISO 周一重置</span>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
