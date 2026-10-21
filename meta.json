@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-21T18:20:48+08:00",
+  "updated_at": "2026-10-21T18:21:07+08:00",
   "asof": "2026-10-21",
   "touch_start": "2026-07-21",
   "touch_end": "2026-10-21",
@@ -7,41 +7,9 @@
   "hist_rows": 182,
   "hist_bounce_ok": 120,
   "levels_rows": 39,
-  "new_bounces": [
-    {
-      "id": "SH-20261016",
-      "symbol": "BTCUSD",
-      "date": "2026-10-19",
-      "source": "swing",
-      "side": "sh",
-      "touch_price": "82821.3515625",
-      "bounce_atr": "1714.1171875"
-    },
-    {
-      "id": "SL-20261015",
-      "symbol": "HK50",
-      "date": "2026-10-20",
-      "source": "swing",
-      "side": "sl",
-      "touch_price": "23945.83984375",
-      "bounce_atr": "193.26953125"
-    },
-    {
-      "id": "SL-20261015",
-      "symbol": "JPN225",
-      "date": "2026-10-19",
-      "source": "swing",
-      "side": "sl",
-      "touch_price": "64092.73828125",
-      "bounce_atr": "1311.890625"
-    }
-  ],
-  "week_reset": true,
-  "symbols_added": [
-    "BTCUSD",
-    "HK50",
-    "JPN225"
-  ],
+  "new_bounces": [],
+  "week_reset": false,
+  "symbols_added": [],
   "errors": [],
   "data_source": "Yahoo Finance (XAUUSD via GC=F); not Pepperstone"
 }
