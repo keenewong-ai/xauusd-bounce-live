@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-10-22T12:07:21+08:00",
+  "updated_at": "2026-10-22T16:09:45+08:00",
   "asof": "2026-10-22",
   "touch_start": "2026-07-22",
   "touch_end": "2026-10-22",
   "week_id": "2026-10-19",
-  "hist_rows": 183,
-  "hist_bounce_ok": 119,
-  "levels_rows": 39,
+  "hist_rows": 185,
+  "hist_bounce_ok": 120,
+  "levels_rows": 38,
   "new_bounces": [
     {
-      "id": "SL-20261015",
-      "symbol": "HK50",
-      "date": "2026-10-20",
+      "id": "SH-20261012",
+      "symbol": "BTCUSD",
+      "date": "2026-10-21",
       "source": "swing",
-      "side": "sl",
-      "touch_price": "23945.83984375",
-      "bounce_atr": "193.26953125"
+      "side": "sh",
+      "touch_price": "84249.21875",
+      "bounce_atr": "2148.7890625"
     }
   ],
   "week_reset": false,
