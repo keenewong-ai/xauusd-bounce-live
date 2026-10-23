@@ -1,17 +1,349 @@
 {
-  "updated_at": "2026-10-23T20:09:13+08:00",
+  "updated_at": "2026-10-24T00:05:57+08:00",
   "asof": "2026-10-23",
-  "touch_start": "2026-07-23",
-  "touch_end": "2026-10-23",
+  "touch_start": "2026-07-24",
+  "touch_end": "2026-10-24",
   "week_id": "2026-10-19",
-  "hist_rows": 135,
-  "hist_bounce_ok": 81,
-  "levels_rows": 32,
-  "new_bounces": [],
+  "hist_rows": 184,
+  "hist_bounce_ok": 115,
+  "levels_rows": 39,
+  "new_bounces": [
+    {
+      "id": "FVG-B-20260822",
+      "symbol": "BTCUSD",
+      "date": "2026-08-23",
+      "source": "fvg",
+      "side": "buy",
+      "touch_price": "76526.7109375",
+      "bounce_atr": "4820.2421875"
+    },
+    {
+      "id": "FVG-B-20260919",
+      "symbol": "BTCUSD",
+      "date": "2026-09-20",
+      "source": "fvg",
+      "side": "buy",
+      "touch_price": "80814.9375",
+      "bounce_atr": "6548.8203125"
+    },
+    {
+      "id": "FVG-S-20261008",
+      "symbol": "BTCUSD",
+      "date": "2026-10-11",
+      "source": "fvg",
+      "side": "sell",
+      "touch_price": "83474.9609375",
+      "bounce_atr": "3739.1015625"
+    },
+    {
+      "id": "SH-20260514",
+      "symbol": "BTCUSD",
+      "date": "2026-09-03",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "82005.9609375",
+      "bounce_atr": "4370.2734375"
+    },
+    {
+      "id": "SH-20260521",
+      "symbol": "BTCUSD",
+      "date": "2026-08-21",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "78100.5625",
+      "bounce_atr": "2475.6171875"
+    },
+    {
+      "id": "SH-20260526",
+      "symbol": "BTCUSD",
+      "date": "2026-08-21",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "77990.8671875",
+      "bounce_atr": "2365.921875"
+    },
+    {
+      "id": "SH-20260731",
+      "symbol": "BTCUSD",
+      "date": "2026-08-07",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "65328.18359375",
+      "bounce_atr": "2142.7109375"
+    },
+    {
+      "id": "SH-20260805",
+      "symbol": "BTCUSD",
+      "date": "2026-08-07",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "64954.34765625",
+      "bounce_atr": "1768.875"
+    },
+    {
+      "id": "SH-20260807",
+      "symbol": "BTCUSD",
+      "date": "2026-08-09",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "65330.609375",
+      "bounce_atr": "2842.91015625"
+    },
+    {
+      "id": "SH-20260821",
+      "symbol": "BTCUSD",
+      "date": "2026-08-24",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "79463.7109375",
+      "bounce_atr": "2554.359375"
+    },
+    {
+      "id": "SH-20260825",
+      "symbol": "BTCUSD",
+      "date": "2026-08-28",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "81235.03125",
+      "bounce_atr": "4986.7265625"
+    },
+    {
+      "id": "SH-20260828",
+      "symbol": "BTCUSD",
+      "date": "2026-09-03",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "81346.953125",
+      "bounce_atr": "3711.265625"
+    },
+    {
+      "id": "SH-20260830",
+      "symbol": "BTCUSD",
+      "date": "2026-09-03",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "79373.1796875",
+      "bounce_atr": "1737.4921875"
+    },
+    {
+      "id": "SH-20260909",
+      "symbol": "BTCUSD",
+      "date": "2026-09-11",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "79737.296875",
+      "bounce_atr": "4792.703125"
+    },
+    {
+      "id": "SH-20260925",
+      "symbol": "BTCUSD",
+      "date": "2026-09-30",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "85230.0546875",
+      "bounce_atr": "2097.296875"
+    },
+    {
+      "id": "SH-20260927",
+      "symbol": "BTCUSD",
+      "date": "2026-09-30",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "85126.109375",
+      "bounce_atr": "1993.3515625"
+    },
+    {
+      "id": "SH-20260930",
+      "symbol": "BTCUSD",
+      "date": "2026-10-02",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "85599.8046875",
+      "bounce_atr": "2828.015625"
+    },
+    {
+      "id": "SH-20261012",
+      "symbol": "BTCUSD",
+      "date": "2026-10-21",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "84249.21875",
+      "bounce_atr": "3407.9453125"
+    },
+    {
+      "id": "SH-20261016",
+      "symbol": "BTCUSD",
+      "date": "2026-10-19",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "82821.3515625",
+      "bounce_atr": "1980.078125"
+    },
+    {
+      "id": "SL-20260717",
+      "symbol": "BTCUSD",
+      "date": "2026-07-31",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "62489.453125",
+      "bounce_atr": "2464.89453125"
+    },
+    {
+      "id": "SL-20260720",
+      "symbol": "BTCUSD",
+      "date": "2026-07-24",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "63720.390625",
+      "bounce_atr": "1937.9453125"
+    },
+    {
+      "id": "SL-20260724",
+      "symbol": "BTCUSD",
+      "date": "2026-07-27",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "63686.03515625",
+      "bounce_atr": "1642.1484375"
+    },
+    {
+      "id": "SL-20260728",
+      "symbol": "BTCUSD",
+      "date": "2026-07-31",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "62714.8046875",
+      "bounce_atr": "2239.54296875"
+    },
+    {
+      "id": "SL-20260801",
+      "symbol": "BTCUSD",
+      "date": "2026-08-03",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "62233.01171875",
+      "bounce_atr": "3097.59765625"
+    },
+    {
+      "id": "SL-20260811",
+      "symbol": "BTCUSD",
+      "date": "2026-08-13",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "63185.47265625",
+      "bounce_atr": "1802.23828125"
+    },
+    {
+      "id": "SL-20260823",
+      "symbol": "BTCUSD",
+      "date": "2026-09-15",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "75624.9453125",
+      "bounce_atr": "6286.1953125"
+    },
+    {
+      "id": "SL-20260826",
+      "symbol": "BTCUSD",
+      "date": "2026-08-28",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "77639.8359375",
+      "bounce_atr": "1733.34375"
+    },
+    {
+      "id": "SL-20260828",
+      "symbol": "BTCUSD",
+      "date": "2026-09-01",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "76909.3515625",
+      "bounce_atr": "5352.859375"
+    },
+    {
+      "id": "SL-20260830",
+      "symbol": "BTCUSD",
+      "date": "2026-09-01",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "77056.1484375",
+      "bounce_atr": "5206.0625"
+    },
+    {
+      "id": "SL-20260902",
+      "symbol": "BTCUSD",
+      "date": "2026-09-11",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "76248.3046875",
+      "bounce_atr": "3320.6484375"
+    },
+    {
+      "id": "SL-20260908",
+      "symbol": "BTCUSD",
+      "date": "2026-09-10",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "77635.6875",
+      "bounce_atr": "2182.6484375"
+    },
+    {
+      "id": "SL-20260911",
+      "symbol": "BTCUSD",
+      "date": "2026-09-15",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "76162.9140625",
+      "bounce_atr": "5748.2265625"
+    },
+    {
+      "id": "SL-20260920",
+      "symbol": "BTCUSD",
+      "date": "2026-10-15",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "80098.7734375",
+      "bounce_atr": "3189.03125"
+    },
+    {
+      "id": "SL-20260924",
+      "symbol": "BTCUSD",
+      "date": "2026-09-28",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "82906.6171875",
+      "bounce_atr": "4239.734375"
+    },
+    {
+      "id": "SL-20260928",
+      "symbol": "BTCUSD",
+      "date": "2026-10-08",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "82570.71875",
+      "bounce_atr": "1678.5"
+    },
+    {
+      "id": "SL-20261008",
+      "symbol": "BTCUSD",
+      "date": "2026-10-15",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "80336.90625",
+      "bounce_atr": "2950.8984375"
+    },
+    {
+      "id": "SL-20261013",
+      "symbol": "BTCUSD",
+      "date": "2026-10-15",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "80962.515625",
+      "bounce_atr": "2325.2890625"
+    }
+  ],
   "week_reset": false,
   "symbols_added": [],
-  "errors": [
-    "BTCUSD: No data for BTC-USD"
-  ],
+  "errors": [],
   "data_source": "Yahoo Finance (XAUUSD via GC=F); not Pepperstone"
 }
