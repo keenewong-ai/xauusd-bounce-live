@@ -1,15 +1,27 @@
 {
-  "updated_at": "2026-10-26T12:05:46+08:00",
+  "updated_at": "2026-10-26T16:10:56+08:00",
   "asof": "2026-10-26",
   "touch_start": "2026-07-26",
   "touch_end": "2026-10-26",
   "week_id": "2026-10-26",
-  "hist_rows": 187,
-  "hist_bounce_ok": 115,
-  "levels_rows": 40,
-  "new_bounces": [],
+  "hist_rows": 188,
+  "hist_bounce_ok": 116,
+  "levels_rows": 42,
+  "new_bounces": [
+    {
+      "id": "SL-20261015",
+      "symbol": "BTCUSD",
+      "date": "2026-10-24",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "79735.859375",
+      "bounce_atr": "1192.40625"
+    }
+  ],
   "week_reset": false,
-  "symbols_added": [],
+  "symbols_added": [
+    "BTCUSD"
+  ],
   "errors": [],
   "data_source": "Yahoo Finance (XAUUSD via GC=F); not Pepperstone"
 }
