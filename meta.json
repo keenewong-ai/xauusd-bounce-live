@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-27T16:05:49+08:00",
+  "updated_at": "2026-10-27T20:05:13+08:00",
   "asof": "2026-10-27",
   "touch_start": "2026-07-27",
   "touch_end": "2026-10-27",
@@ -7,21 +7,9 @@
   "hist_rows": 188,
   "hist_bounce_ok": 119,
   "levels_rows": 40,
-  "new_bounces": [
-    {
-      "id": "FVG-S-20261023",
-      "symbol": "HK50",
-      "date": "2026-10-26",
-      "source": "fvg",
-      "side": "sell",
-      "touch_price": "23231.630859375",
-      "bounce_atr": "247.640625"
-    }
-  ],
+  "new_bounces": [],
   "week_reset": false,
-  "symbols_added": [
-    "HK50"
-  ],
+  "symbols_added": [],
   "errors": [],
   "data_source": "Yahoo Finance (XAUUSD via GC=F); not Pepperstone"
 }
