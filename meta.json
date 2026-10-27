@@ -1,15 +1,36 @@
 {
-  "updated_at": "2026-10-27T08:09:21+08:00",
+  "updated_at": "2026-10-27T12:10:00+08:00",
   "asof": "2026-10-27",
   "touch_start": "2026-07-27",
   "touch_end": "2026-10-27",
   "week_id": "2026-10-26",
-  "hist_rows": 186,
-  "hist_bounce_ok": 116,
-  "levels_rows": 38,
-  "new_bounces": [],
+  "hist_rows": 188,
+  "hist_bounce_ok": 118,
+  "levels_rows": 40,
+  "new_bounces": [
+    {
+      "id": "SL-20260914",
+      "symbol": "JPN225",
+      "date": "2026-10-23",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "62726.1796875",
+      "bounce_atr": "958.51171875"
+    },
+    {
+      "id": "SL-20260729",
+      "symbol": "XAUUSD",
+      "date": "2026-10-23",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "3993.8000488281",
+      "bounce_atr": "50.1999511719"
+    }
+  ],
   "week_reset": false,
-  "symbols_added": [],
+  "symbols_added": [
+    "JPN225"
+  ],
   "errors": [],
   "data_source": "Yahoo Finance (XAUUSD via GC=F); not Pepperstone"
 }
