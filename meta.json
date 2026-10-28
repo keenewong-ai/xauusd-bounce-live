@@ -1,13 +1,32 @@
 {
-  "updated_at": "2026-10-28T08:00:44+08:00",
+  "updated_at": "2026-10-28T12:05:39+08:00",
   "asof": "2026-10-28",
   "touch_start": "2026-07-28",
   "touch_end": "2026-10-28",
   "week_id": "2026-10-26",
   "hist_rows": 187,
-  "hist_bounce_ok": 116,
+  "hist_bounce_ok": 118,
   "levels_rows": 40,
-  "new_bounces": [],
+  "new_bounces": [
+    {
+      "id": "FVG-S-20261023",
+      "symbol": "HK50",
+      "date": "2026-10-26",
+      "source": "fvg",
+      "side": "sell",
+      "touch_price": "23231.630859375",
+      "bounce_atr": "247.640625"
+    },
+    {
+      "id": "SL-20260914",
+      "symbol": "JPN225",
+      "date": "2026-10-23",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "62726.1796875",
+      "bounce_atr": "1582.53125"
+    }
+  ],
   "week_reset": false,
   "symbols_added": [],
   "errors": [],
