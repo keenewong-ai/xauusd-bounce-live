@@ -307,12 +307,26 @@ $('export').addEventListener('click', () => {
   URL.revokeObjectURL(a.href);
 });
 
+function civilIsoHK(d = new Date()) {
+  const parts = new Intl.DateTimeFormat('en-CA', {
+    timeZone: 'Asia/Hong_Kong', year: 'numeric', month: '2-digit', day: '2-digit'
+  }).formatToParts(d);
+  const get = t => parts.find(p => p.type === t).value;
+  return `${get('year')}-${get('month')}-${get('day')}`;
+}
+
+/** 今日（香港曆）對上一個星期日；若今日已係日就用今日 */
+function lastSundayIso(d = new Date()) {
+  const hk = civilIsoHK(d);
+  const [y, mo, da] = hk.split('-').map(Number);
+  const utc = new Date(Date.UTC(y, mo - 1, da, 12));
+  utc.setUTCDate(utc.getUTCDate() - utc.getUTCDay());
+  return utc.toISOString().slice(0, 10);
+}
+
 (() => {
-  const end = new Date();
-  const start = new Date(end); start.setMonth(start.getMonth() - 3);
-  const iso = d => d.toISOString().slice(0,10);
-  $('from').value = iso(start);
-  $('to').value = iso(end);
+  $('from').value = lastSundayIso();
+  $('to').value = civilIsoHK();
 })();
 
 Promise.all([
