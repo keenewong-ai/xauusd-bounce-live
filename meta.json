@@ -1,13 +1,32 @@
 {
-  "updated_at": "2026-10-29T04:04:17+08:00",
-  "asof": "2026-10-28",
+  "updated_at": "2026-10-29T12:04:47+08:00",
+  "asof": "2026-10-29",
   "touch_start": "2026-07-29",
   "touch_end": "2026-10-29",
   "week_id": "2026-10-26",
-  "hist_rows": 181,
-  "hist_bounce_ok": 113,
-  "levels_rows": 38,
-  "new_bounces": [],
+  "hist_rows": 183,
+  "hist_bounce_ok": 115,
+  "levels_rows": 41,
+  "new_bounces": [
+    {
+      "id": "SL-20261014",
+      "symbol": "EURUSD",
+      "date": "2026-10-28",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "1.1114075184",
+      "bounce_atr": "0.0049130917"
+    },
+    {
+      "id": "SL-20261020",
+      "symbol": "JPN225",
+      "date": "2026-10-22",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "63807.1484375",
+      "bounce_atr": "990.1796875"
+    }
+  ],
   "week_reset": false,
   "symbols_added": [],
   "errors": [],
