@@ -1,30 +1,21 @@
 {
-  "updated_at": "2026-10-30T12:04:28+08:00",
+  "updated_at": "2026-10-30T16:02:11+08:00",
   "asof": "2026-10-30",
   "touch_start": "2026-07-30",
   "touch_end": "2026-10-30",
   "week_id": "2026-10-26",
-  "hist_rows": 188,
-  "hist_bounce_ok": 117,
-  "levels_rows": 39,
+  "hist_rows": 189,
+  "hist_bounce_ok": 118,
+  "levels_rows": 38,
   "new_bounces": [
     {
-      "id": "SL-20261027",
-      "symbol": "HK50",
-      "date": "2026-10-29",
-      "source": "swing",
-      "side": "sl",
-      "touch_price": "22983.990234375",
-      "bounce_atr": "384"
-    },
-    {
-      "id": "SL-20261020",
-      "symbol": "JPN225",
-      "date": "2026-10-22",
-      "source": "swing",
-      "side": "sl",
-      "touch_price": "63807.1484375",
-      "bounce_atr": "1024.140625"
+      "id": "FVG-S-20261023",
+      "symbol": "XAUUSD",
+      "date": "2026-10-27",
+      "source": "fvg",
+      "side": "sell",
+      "touch_price": "4050.1999511719",
+      "bounce_atr": "73.6999511719"
     }
   ],
   "week_reset": false,
