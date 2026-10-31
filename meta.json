@@ -1,13 +1,23 @@
 {
-  "updated_at": "2026-10-31T08:00:31+08:00",
+  "updated_at": "2026-10-31T12:08:39+08:00",
   "asof": "2026-10-31",
   "touch_start": "2026-07-31",
   "touch_end": "2026-10-31",
   "week_id": "2026-10-26",
-  "hist_rows": 186,
-  "hist_bounce_ok": 117,
-  "levels_rows": 39,
-  "new_bounces": [],
+  "hist_rows": 188,
+  "hist_bounce_ok": 118,
+  "levels_rows": 38,
+  "new_bounces": [
+    {
+      "id": "SL-20261027",
+      "symbol": "HK50",
+      "date": "2026-10-29",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "22983.990234375",
+      "bounce_atr": "416.029296875"
+    }
+  ],
   "week_reset": false,
   "symbols_added": [],
   "errors": [],
