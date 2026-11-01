@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-02T00:01:56+08:00",
+  "updated_at": "2026-11-02T04:02:57+08:00",
   "asof": "2026-11-01",
   "touch_start": "2026-08-02",
   "touch_end": "2026-11-02",
@@ -8,7 +8,7 @@
   "hist_bounce_ok": 114,
   "levels_rows": 39,
   "new_bounces": [],
-  "week_reset": true,
+  "week_reset": false,
   "symbols_added": [],
   "errors": [],
   "data_source": "Yahoo Finance (XAUUSD via GC=F); not Pepperstone"
