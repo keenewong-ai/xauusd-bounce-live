@@ -1,27 +1,15 @@
 {
-  "updated_at": "2026-11-03T16:09:19+08:00",
+  "updated_at": "2026-11-03T20:08:56+08:00",
   "asof": "2026-11-03",
   "touch_start": "2026-08-03",
   "touch_end": "2026-11-03",
   "week_id": "2026-11-02",
   "hist_rows": 187,
   "hist_bounce_ok": 116,
-  "levels_rows": 38,
-  "new_bounces": [
-    {
-      "id": "FVG-S-20261030",
-      "symbol": "BTCUSD",
-      "date": "2026-11-02",
-      "source": "fvg",
-      "side": "sell",
-      "touch_price": "78647.390625",
-      "bounce_atr": "2341.8515625"
-    }
-  ],
+  "levels_rows": 37,
+  "new_bounces": [],
   "week_reset": false,
-  "symbols_added": [
-    "BTCUSD"
-  ],
+  "symbols_added": [],
   "errors": [],
   "data_source": "Yahoo Finance (XAUUSD via GC=F); not Pepperstone"
 }
