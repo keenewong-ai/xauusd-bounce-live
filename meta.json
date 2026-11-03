@@ -1,27 +1,15 @@
 {
-  "updated_at": "2026-11-03T08:07:10+08:00",
+  "updated_at": "2026-11-03T12:08:47+08:00",
   "asof": "2026-11-03",
   "touch_start": "2026-08-03",
   "touch_end": "2026-11-03",
   "week_id": "2026-11-02",
-  "hist_rows": 185,
+  "hist_rows": 186,
   "hist_bounce_ok": 115,
-  "levels_rows": 39,
-  "new_bounces": [
-    {
-      "id": "SH-20261026",
-      "symbol": "EURUSD",
-      "date": "2026-11-02",
-      "source": "swing",
-      "side": "sh",
-      "touch_price": "1.1227124929",
-      "bounce_atr": "0.0040191412"
-    }
-  ],
+  "levels_rows": 38,
+  "new_bounces": [],
   "week_reset": false,
-  "symbols_added": [
-    "EURUSD"
-  ],
+  "symbols_added": [],
   "errors": [],
   "data_source": "Yahoo Finance (XAUUSD via GC=F); not Pepperstone"
 }
