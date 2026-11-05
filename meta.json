@@ -1,15 +1,45 @@
 {
-  "updated_at": "2026-11-05T04:03:11+08:00",
-  "asof": "2026-11-04",
+  "updated_at": "2026-11-05T12:03:13+08:00",
+  "asof": "2026-11-05",
   "touch_start": "2026-08-05",
   "touch_end": "2026-11-05",
   "week_id": "2026-11-02",
-  "hist_rows": 189,
-  "hist_bounce_ok": 115,
-  "levels_rows": 28,
-  "new_bounces": [],
+  "hist_rows": 195,
+  "hist_bounce_ok": 118,
+  "levels_rows": 24,
+  "new_bounces": [
+    {
+      "id": "SH-20261016",
+      "symbol": "EURUSD",
+      "date": "2026-11-04",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "1.1270145178",
+      "bounce_atr": "0.0037976503"
+    },
+    {
+      "id": "SL-20260729",
+      "symbol": "JPN225",
+      "date": "2026-11-04",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "60448.8984375",
+      "bounce_atr": "2205.08203125"
+    },
+    {
+      "id": "SL-20261023",
+      "symbol": "JPN225",
+      "date": "2026-11-04",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "61462.609375",
+      "bounce_atr": "1191.37109375"
+    }
+  ],
   "week_reset": false,
-  "symbols_added": [],
+  "symbols_added": [
+    "JPN225"
+  ],
   "errors": [],
   "data_source": "Yahoo Finance (XAUUSD via GC=F); not Pepperstone"
 }
