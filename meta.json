@@ -1,15 +1,21 @@
 {
-  "updated_at": "2026-11-06T20:08:23+08:00",
-  "asof": "2026-11-06",
-  "touch_start": "2026-08-06",
-  "touch_end": "2026-11-06",
+  "updated_at": "2026-11-07T00:09:25+08:00",
+  "asof": "2026-11-07",
+  "touch_start": "2026-08-07",
+  "touch_end": "2026-11-07",
   "week_id": "2026-11-02",
-  "hist_rows": 194,
-  "hist_bounce_ok": 124,
-  "levels_rows": 24,
+  "hist_rows": 0,
+  "hist_bounce_ok": 0,
+  "levels_rows": 0,
   "new_bounces": [],
   "week_reset": false,
   "symbols_added": [],
-  "errors": [],
+  "errors": [
+    "XAUUSD: No data for GC=F",
+    "JPN225: No data for ^N225",
+    "EURUSD: No data for EURUSD=X",
+    "BTCUSD: No data for BTC-USD",
+    "HK50: No data for ^HSI"
+  ],
   "data_source": "Yahoo Finance (XAUUSD via GC=F); not Pepperstone"
 }
