@@ -1,54 +1,34 @@
 {
-  "updated_at": "2026-11-06T12:02:53+08:00",
+  "updated_at": "2026-11-06T16:01:52+08:00",
   "asof": "2026-11-06",
   "touch_start": "2026-08-06",
   "touch_end": "2026-11-06",
   "week_id": "2026-11-02",
-  "hist_rows": 193,
-  "hist_bounce_ok": 122,
-  "levels_rows": 22,
+  "hist_rows": 194,
+  "hist_bounce_ok": 124,
+  "levels_rows": 23,
   "new_bounces": [
     {
-      "id": "SH-20261102",
-      "symbol": "EURUSD",
+      "id": "SL-20261030",
+      "symbol": "BTCUSD",
       "date": "2026-11-04",
       "source": "swing",
-      "side": "sh",
-      "touch_price": "1.1236839294",
-      "bounce_atr": "0.0036121607"
+      "side": "sl",
+      "touch_price": "76189.8828125",
+      "bounce_atr": "4643.734375"
     },
     {
-      "id": "SH-20260928",
-      "symbol": "HK50",
+      "id": "SH-20261028",
+      "symbol": "XAUUSD",
       "date": "2026-11-05",
       "source": "swing",
       "side": "sh",
-      "touch_price": "24767.220703125",
-      "bounce_atr": "417.919921875"
-    },
-    {
-      "id": "SL-20260729",
-      "symbol": "JPN225",
-      "date": "2026-11-04",
-      "source": "swing",
-      "side": "sl",
-      "touch_price": "60448.8984375",
-      "bounce_atr": "2205.08203125"
-    },
-    {
-      "id": "SL-20261023",
-      "symbol": "JPN225",
-      "date": "2026-11-04",
-      "source": "swing",
-      "side": "sl",
-      "touch_price": "61462.609375",
-      "bounce_atr": "1191.37109375"
+      "touch_price": "4097.2001953125",
+      "bounce_atr": "52.7001953125"
     }
   ],
   "week_reset": false,
-  "symbols_added": [
-    "HK50"
-  ],
+  "symbols_added": [],
   "errors": [],
   "data_source": "Yahoo Finance (XAUUSD via GC=F); not Pepperstone"
 }
