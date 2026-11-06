@@ -1,32 +1,13 @@
 {
-  "updated_at": "2026-11-06T16:01:52+08:00",
+  "updated_at": "2026-11-06T20:08:23+08:00",
   "asof": "2026-11-06",
   "touch_start": "2026-08-06",
   "touch_end": "2026-11-06",
   "week_id": "2026-11-02",
   "hist_rows": 194,
   "hist_bounce_ok": 124,
-  "levels_rows": 23,
-  "new_bounces": [
-    {
-      "id": "SL-20261030",
-      "symbol": "BTCUSD",
-      "date": "2026-11-04",
-      "source": "swing",
-      "side": "sl",
-      "touch_price": "76189.8828125",
-      "bounce_atr": "4643.734375"
-    },
-    {
-      "id": "SH-20261028",
-      "symbol": "XAUUSD",
-      "date": "2026-11-05",
-      "source": "swing",
-      "side": "sh",
-      "touch_price": "4097.2001953125",
-      "bounce_atr": "52.7001953125"
-    }
-  ],
+  "levels_rows": 24,
+  "new_bounces": [],
   "week_reset": false,
   "symbols_added": [],
   "errors": [],
