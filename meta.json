@@ -1,21 +1,1111 @@
 {
-  "updated_at": "2026-11-09T00:07:10+08:00",
-  "asof": "2026-11-09",
+  "updated_at": "2026-11-09T04:08:06+08:00",
+  "asof": "2026-11-08",
   "touch_start": "2026-08-09",
   "touch_end": "2026-11-09",
   "week_id": "2026-11-09",
-  "hist_rows": 0,
-  "hist_bounce_ok": 0,
-  "levels_rows": 0,
-  "new_bounces": [],
-  "week_reset": true,
-  "symbols_added": [],
-  "errors": [
-    "XAUUSD: No data for GC=F",
-    "JPN225: No data for ^N225",
-    "EURUSD: No data for EURUSD=X",
-    "BTCUSD: No data for BTC-USD",
-    "HK50: No data for ^HSI"
+  "hist_rows": 189,
+  "hist_bounce_ok": 121,
+  "levels_rows": 25,
+  "new_bounces": [
+    {
+      "id": "FVG-B-20260822",
+      "symbol": "BTCUSD",
+      "date": "2026-08-23",
+      "source": "fvg",
+      "side": "buy",
+      "touch_price": "76526.7109375",
+      "bounce_atr": "4820.2421875"
+    },
+    {
+      "id": "FVG-B-20260919",
+      "symbol": "BTCUSD",
+      "date": "2026-09-20",
+      "source": "fvg",
+      "side": "buy",
+      "touch_price": "80814.9375",
+      "bounce_atr": "6548.8203125"
+    },
+    {
+      "id": "FVG-S-20261008",
+      "symbol": "BTCUSD",
+      "date": "2026-10-11",
+      "source": "fvg",
+      "side": "sell",
+      "touch_price": "83474.9609375",
+      "bounce_atr": "3739.1015625"
+    },
+    {
+      "id": "FVG-S-20261030",
+      "symbol": "BTCUSD",
+      "date": "2026-11-02",
+      "source": "fvg",
+      "side": "sell",
+      "touch_price": "78647.390625",
+      "bounce_atr": "3852.28125"
+    },
+    {
+      "id": "SH-20260526",
+      "symbol": "BTCUSD",
+      "date": "2026-08-21",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "77990.8671875",
+      "bounce_atr": "2365.921875"
+    },
+    {
+      "id": "SH-20260807",
+      "symbol": "BTCUSD",
+      "date": "2026-08-09",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "65330.609375",
+      "bounce_atr": "2842.91015625"
+    },
+    {
+      "id": "SH-20260821",
+      "symbol": "BTCUSD",
+      "date": "2026-08-24",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "79463.7109375",
+      "bounce_atr": "2554.359375"
+    },
+    {
+      "id": "SH-20260825",
+      "symbol": "BTCUSD",
+      "date": "2026-08-28",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "81235.03125",
+      "bounce_atr": "4986.7265625"
+    },
+    {
+      "id": "SH-20260828",
+      "symbol": "BTCUSD",
+      "date": "2026-09-03",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "81346.953125",
+      "bounce_atr": "3711.265625"
+    },
+    {
+      "id": "SH-20260830",
+      "symbol": "BTCUSD",
+      "date": "2026-09-03",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "79373.1796875",
+      "bounce_atr": "1737.4921875"
+    },
+    {
+      "id": "SH-20260909",
+      "symbol": "BTCUSD",
+      "date": "2026-09-11",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "79737.296875",
+      "bounce_atr": "4792.703125"
+    },
+    {
+      "id": "SH-20260925",
+      "symbol": "BTCUSD",
+      "date": "2026-09-30",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "85230.0546875",
+      "bounce_atr": "2097.296875"
+    },
+    {
+      "id": "SH-20260927",
+      "symbol": "BTCUSD",
+      "date": "2026-09-30",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "85126.109375",
+      "bounce_atr": "1993.3515625"
+    },
+    {
+      "id": "SH-20260930",
+      "symbol": "BTCUSD",
+      "date": "2026-10-02",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "85599.8046875",
+      "bounce_atr": "2828.015625"
+    },
+    {
+      "id": "SH-20261012",
+      "symbol": "BTCUSD",
+      "date": "2026-10-21",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "84249.21875",
+      "bounce_atr": "5103.6796875"
+    },
+    {
+      "id": "SH-20261016",
+      "symbol": "BTCUSD",
+      "date": "2026-10-19",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "82821.3515625",
+      "bounce_atr": "3675.8125"
+    },
+    {
+      "id": "SH-20261102",
+      "symbol": "BTCUSD",
+      "date": "2026-11-04",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "78724.390625",
+      "bounce_atr": "3929.28125"
+    },
+    {
+      "id": "SL-20260811",
+      "symbol": "BTCUSD",
+      "date": "2026-08-13",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "63185.47265625",
+      "bounce_atr": "1802.23828125"
+    },
+    {
+      "id": "SL-20260823",
+      "symbol": "BTCUSD",
+      "date": "2026-09-15",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "75624.9453125",
+      "bounce_atr": "6286.1953125"
+    },
+    {
+      "id": "SL-20260826",
+      "symbol": "BTCUSD",
+      "date": "2026-08-28",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "77639.8359375",
+      "bounce_atr": "1733.34375"
+    },
+    {
+      "id": "SL-20260828",
+      "symbol": "BTCUSD",
+      "date": "2026-09-01",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "76909.3515625",
+      "bounce_atr": "5352.859375"
+    },
+    {
+      "id": "SL-20260830",
+      "symbol": "BTCUSD",
+      "date": "2026-09-01",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "77056.1484375",
+      "bounce_atr": "5206.0625"
+    },
+    {
+      "id": "SL-20260902",
+      "symbol": "BTCUSD",
+      "date": "2026-09-11",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "76248.3046875",
+      "bounce_atr": "3320.6484375"
+    },
+    {
+      "id": "SL-20260908",
+      "symbol": "BTCUSD",
+      "date": "2026-09-10",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "77635.6875",
+      "bounce_atr": "2182.6484375"
+    },
+    {
+      "id": "SL-20260911",
+      "symbol": "BTCUSD",
+      "date": "2026-09-15",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "76162.9140625",
+      "bounce_atr": "5748.2265625"
+    },
+    {
+      "id": "SL-20260915",
+      "symbol": "BTCUSD",
+      "date": "2026-11-06",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "74944.59375",
+      "bounce_atr": "1194.0859375"
+    },
+    {
+      "id": "SL-20260920",
+      "symbol": "BTCUSD",
+      "date": "2026-10-15",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "80098.7734375",
+      "bounce_atr": "3189.03125"
+    },
+    {
+      "id": "SL-20260924",
+      "symbol": "BTCUSD",
+      "date": "2026-09-28",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "82906.6171875",
+      "bounce_atr": "4239.734375"
+    },
+    {
+      "id": "SL-20260928",
+      "symbol": "BTCUSD",
+      "date": "2026-10-08",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "82570.71875",
+      "bounce_atr": "1678.5"
+    },
+    {
+      "id": "SL-20261008",
+      "symbol": "BTCUSD",
+      "date": "2026-10-15",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "80336.90625",
+      "bounce_atr": "2950.8984375"
+    },
+    {
+      "id": "SL-20261013",
+      "symbol": "BTCUSD",
+      "date": "2026-10-15",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "80962.515625",
+      "bounce_atr": "2325.2890625"
+    },
+    {
+      "id": "SL-20261015",
+      "symbol": "BTCUSD",
+      "date": "2026-10-24",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "79735.859375",
+      "bounce_atr": "2154.0859375"
+    },
+    {
+      "id": "SL-20261018",
+      "symbol": "BTCUSD",
+      "date": "2026-10-23",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "80615.3984375",
+      "bounce_atr": "1087.8046875"
+    },
+    {
+      "id": "SL-20261030",
+      "symbol": "BTCUSD",
+      "date": "2026-11-04",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "76189.8828125",
+      "bounce_atr": "4643.734375"
+    },
+    {
+      "id": "FVG-B-20260817",
+      "symbol": "EURUSD",
+      "date": "2026-08-18",
+      "source": "fvg",
+      "side": "buy",
+      "touch_price": "1.1575547457",
+      "bounce_atr": "0.0136797428"
+    },
+    {
+      "id": "FVG-S-20260918",
+      "symbol": "EURUSD",
+      "date": "2026-09-21",
+      "source": "fvg",
+      "side": "sell",
+      "touch_price": "1.1494252682",
+      "bounce_atr": "0.0139906406"
+    },
+    {
+      "id": "FVG-S-20260924",
+      "symbol": "EURUSD",
+      "date": "2026-09-25",
+      "source": "fvg",
+      "side": "sell",
+      "touch_price": "1.1399909258",
+      "bounce_atr": "0.0180467367"
+    },
+    {
+      "id": "SH-20260529",
+      "symbol": "EURUSD",
+      "date": "2026-08-20",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "1.1685519218",
+      "bounce_atr": "0.0048546791"
+    },
+    {
+      "id": "SH-20260901",
+      "symbol": "EURUSD",
+      "date": "2026-09-03",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "1.1625204086",
+      "bounce_atr": "0.0037852526"
+    },
+    {
+      "id": "SH-20261009",
+      "symbol": "EURUSD",
+      "date": "2026-10-16",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "1.124353528",
+      "bounce_atr": "0.0056476593"
+    },
+    {
+      "id": "SH-20261016",
+      "symbol": "EURUSD",
+      "date": "2026-11-04",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "1.1270145178",
+      "bounce_atr": "0.0137262344"
+    },
+    {
+      "id": "SH-20261020",
+      "symbol": "EURUSD",
+      "date": "2026-11-04",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "1.1259105206",
+      "bounce_atr": "0.0126222372"
+    },
+    {
+      "id": "SH-20261022",
+      "symbol": "EURUSD",
+      "date": "2026-11-04",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "1.1257457733",
+      "bounce_atr": "0.01245749"
+    },
+    {
+      "id": "SH-20261026",
+      "symbol": "EURUSD",
+      "date": "2026-11-02",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "1.1227124929",
+      "bounce_atr": "0.0094242096"
+    },
+    {
+      "id": "SH-20261102",
+      "symbol": "EURUSD",
+      "date": "2026-11-04",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "1.1236839294",
+      "bounce_atr": "0.0103956461"
+    },
+    {
+      "id": "SL-20260807",
+      "symbol": "EURUSD",
+      "date": "2026-08-13",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "1.1518480778",
+      "bounce_atr": "0.0192492008"
+    },
+    {
+      "id": "SL-20260811",
+      "symbol": "EURUSD",
+      "date": "2026-08-13",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "1.1532030106",
+      "bounce_atr": "0.017894268"
+    },
+    {
+      "id": "SL-20260818",
+      "symbol": "EURUSD",
+      "date": "2026-09-02",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "1.1567245722",
+      "bounce_atr": "0.0086407661"
+    },
+    {
+      "id": "SL-20260831",
+      "symbol": "EURUSD",
+      "date": "2026-09-02",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "1.1585336924",
+      "bounce_atr": "0.006831646"
+    },
+    {
+      "id": "SL-20261001",
+      "symbol": "EURUSD",
+      "date": "2026-10-05",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "1.1219441891",
+      "bounce_atr": "0.0056421757"
+    },
+    {
+      "id": "SL-20261005",
+      "symbol": "EURUSD",
+      "date": "2026-10-12",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "1.1162334681",
+      "bounce_atr": "0.0107810497"
+    },
+    {
+      "id": "SL-20261007",
+      "symbol": "EURUSD",
+      "date": "2026-10-12",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "1.1166073084",
+      "bounce_atr": "0.0104072094"
+    },
+    {
+      "id": "SL-20261014",
+      "symbol": "EURUSD",
+      "date": "2026-10-28",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "1.1114075184",
+      "bounce_atr": "0.0161153078"
+    },
+    {
+      "id": "SL-20261019",
+      "symbol": "EURUSD",
+      "date": "2026-10-23",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "1.1187684536",
+      "bounce_atr": "0.0039440393"
+    },
+    {
+      "id": "FVG-S-20260812",
+      "symbol": "HK50",
+      "date": "2026-08-13",
+      "source": "fvg",
+      "side": "sell",
+      "touch_price": "25498.390625",
+      "bounce_atr": "409.25"
+    },
+    {
+      "id": "FVG-S-20260910",
+      "symbol": "HK50",
+      "date": "2026-09-21",
+      "source": "fvg",
+      "side": "sell",
+      "touch_price": "25021.810546875",
+      "bounce_atr": "746.25"
+    },
+    {
+      "id": "FVG-S-20260911",
+      "symbol": "HK50",
+      "date": "2026-09-14",
+      "source": "fvg",
+      "side": "sell",
+      "touch_price": "24851.1796875",
+      "bounce_atr": "493.490234375"
+    },
+    {
+      "id": "FVG-S-20260925",
+      "symbol": "HK50",
+      "date": "2026-09-28",
+      "source": "fvg",
+      "side": "sell",
+      "touch_price": "24537.140625",
+      "bounce_atr": "701.4609375"
+    },
+    {
+      "id": "FVG-S-20261002",
+      "symbol": "HK50",
+      "date": "2026-10-06",
+      "source": "fvg",
+      "side": "sell",
+      "touch_price": "24099.73046875",
+      "bounce_atr": "362.58984375"
+    },
+    {
+      "id": "FVG-S-20261005",
+      "symbol": "HK50",
+      "date": "2026-10-06",
+      "source": "fvg",
+      "side": "sell",
+      "touch_price": "24040.33984375",
+      "bounce_atr": "303.19921875"
+    },
+    {
+      "id": "FVG-S-20261023",
+      "symbol": "HK50",
+      "date": "2026-10-26",
+      "source": "fvg",
+      "side": "sell",
+      "touch_price": "23231.630859375",
+      "bounce_atr": "303.361328125"
+    },
+    {
+      "id": "SH-20260813",
+      "symbol": "HK50",
+      "date": "2026-08-17",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "25519.390625",
+      "bounce_atr": "278.771484375"
+    },
+    {
+      "id": "SH-20260915",
+      "symbol": "HK50",
+      "date": "2026-09-21",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "24934.060546875",
+      "bounce_atr": "658.5"
+    },
+    {
+      "id": "SH-20260928",
+      "symbol": "HK50",
+      "date": "2026-11-05",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "24767.220703125",
+      "bounce_atr": "417.919921875"
+    },
+    {
+      "id": "SH-20261006",
+      "symbol": "HK50",
+      "date": "2026-10-12",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "24354.109375",
+      "bounce_atr": "507.119140625"
+    },
+    {
+      "id": "SH-20261012",
+      "symbol": "HK50",
+      "date": "2026-10-14",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "24455.94921875",
+      "bounce_atr": "1576.83984375"
+    },
+    {
+      "id": "SL-20260714",
+      "symbol": "HK50",
+      "date": "2026-10-02",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "23902.05078125",
+      "bounce_atr": "452.05859375"
+    },
+    {
+      "id": "SL-20260717",
+      "symbol": "HK50",
+      "date": "2026-09-25",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "24332.509765625",
+      "bounce_atr": "434.7109375"
+    },
+    {
+      "id": "SL-20260814",
+      "symbol": "HK50",
+      "date": "2026-09-02",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "25089.140625",
+      "bounce_atr": "702.240234375"
+    },
+    {
+      "id": "SL-20260818",
+      "symbol": "HK50",
+      "date": "2026-09-01",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "25240.619140625",
+      "bounce_atr": "550.76171875"
+    },
+    {
+      "id": "SL-20260825",
+      "symbol": "HK50",
+      "date": "2026-08-31",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "25403.439453125",
+      "bounce_atr": "387.94140625"
+    },
+    {
+      "id": "SL-20260911",
+      "symbol": "HK50",
+      "date": "2026-09-17",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "24570.240234375",
+      "bounce_atr": "683.869140625"
+    },
+    {
+      "id": "SL-20260917",
+      "symbol": "HK50",
+      "date": "2026-09-25",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "24357.689453125",
+      "bounce_atr": "409.53125"
+    },
+    {
+      "id": "SL-20261005",
+      "symbol": "HK50",
+      "date": "2026-10-08",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "23835.6796875",
+      "bounce_atr": "688.951171875"
+    },
+    {
+      "id": "SL-20261013",
+      "symbol": "HK50",
+      "date": "2026-10-15",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "23987.76953125",
+      "bounce_atr": "404.53125"
+    },
+    {
+      "id": "SL-20261015",
+      "symbol": "HK50",
+      "date": "2026-10-20",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "23945.83984375",
+      "bounce_atr": "193.26953125"
+    },
+    {
+      "id": "SL-20261027",
+      "symbol": "HK50",
+      "date": "2026-10-29",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "22983.990234375",
+      "bounce_atr": "1887.9296875"
+    },
+    {
+      "id": "FVG-B-20260924",
+      "symbol": "JPN225",
+      "date": "2026-09-29",
+      "source": "fvg",
+      "side": "buy",
+      "touch_price": "65407.37109375",
+      "bounce_atr": "5391.24609375"
+    },
+    {
+      "id": "FVG-B-20261001",
+      "symbol": "JPN225",
+      "date": "2026-10-13",
+      "source": "fvg",
+      "side": "buy",
+      "touch_price": "67081.65625",
+      "bounce_atr": "1326.484375"
+    },
+    {
+      "id": "FVG-S-20260819",
+      "symbol": "JPN225",
+      "date": "2026-08-27",
+      "source": "fvg",
+      "side": "sell",
+      "touch_price": "66833.5078125",
+      "bounce_atr": "3060.70703125"
+    },
+    {
+      "id": "FVG-S-20260820",
+      "symbol": "JPN225",
+      "date": "2026-08-26",
+      "source": "fvg",
+      "side": "sell",
+      "touch_price": "66325.3203125",
+      "bounce_atr": "2109.8515625"
+    },
+    {
+      "id": "FVG-S-20260903",
+      "symbol": "JPN225",
+      "date": "2026-09-04",
+      "source": "fvg",
+      "side": "sell",
+      "touch_price": "64724.80859375",
+      "bounce_atr": "1516.1796875"
+    },
+    {
+      "id": "SH-20260706",
+      "symbol": "JPN225",
+      "date": "2026-10-06",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "70384.59375",
+      "bounce_atr": "3326.03125"
+    },
+    {
+      "id": "SH-20260710",
+      "symbol": "JPN225",
+      "date": "2026-08-14",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "69374.859375",
+      "bounce_atr": "4240.87890625"
+    },
+    {
+      "id": "SH-20260715",
+      "symbol": "JPN225",
+      "date": "2026-08-13",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "68798.2421875",
+      "bounce_atr": "3664.26171875"
+    },
+    {
+      "id": "SH-20260722",
+      "symbol": "JPN225",
+      "date": "2026-08-13",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "67592.203125",
+      "bounce_atr": "2458.22265625"
+    },
+    {
+      "id": "SH-20260814",
+      "symbol": "JPN225",
+      "date": "2026-10-05",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "69608.2421875",
+      "bounce_atr": "2549.6796875"
+    },
+    {
+      "id": "SH-20260824",
+      "symbol": "JPN225",
+      "date": "2026-08-26",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "66257.7265625",
+      "bounce_atr": "2042.2578125"
+    },
+    {
+      "id": "SH-20260827",
+      "symbol": "JPN225",
+      "date": "2026-09-28",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "66954.6875",
+      "bounce_atr": "2255.19921875"
+    },
+    {
+      "id": "SH-20260901",
+      "symbol": "JPN225",
+      "date": "2026-09-07",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "66525.703125",
+      "bounce_atr": "3799.5234375"
+    },
+    {
+      "id": "SH-20260908",
+      "symbol": "JPN225",
+      "date": "2026-09-28",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "66791.84375",
+      "bounce_atr": "2092.35546875"
+    },
+    {
+      "id": "SH-20261001",
+      "symbol": "JPN225",
+      "date": "2026-10-05",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "68995.296875",
+      "bounce_atr": "1936.734375"
+    },
+    {
+      "id": "SL-20260729",
+      "symbol": "JPN225",
+      "date": "2026-11-04",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "60448.8984375",
+      "bounce_atr": "2205.08203125"
+    },
+    {
+      "id": "SL-20260807",
+      "symbol": "JPN225",
+      "date": "2026-08-25",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "64651.48828125",
+      "bounce_atr": "2303.19921875"
+    },
+    {
+      "id": "SL-20260819",
+      "symbol": "JPN225",
+      "date": "2026-08-25",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "65133.98046875",
+      "bounce_atr": "1820.70703125"
+    },
+    {
+      "id": "SL-20260821",
+      "symbol": "JPN225",
+      "date": "2026-08-25",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "65260.21875",
+      "bounce_atr": "1694.46875"
+    },
+    {
+      "id": "SL-20260825",
+      "symbol": "JPN225",
+      "date": "2026-09-02",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "64609.46875",
+      "bounce_atr": "2182.375"
+    },
+    {
+      "id": "SL-20260831",
+      "symbol": "JPN225",
+      "date": "2026-09-02",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "64832.1015625",
+      "bounce_atr": "1959.7421875"
+    },
+    {
+      "id": "SL-20260903",
+      "symbol": "JPN225",
+      "date": "2026-09-11",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "63772.80078125",
+      "bounce_atr": "1663.76953125"
+    },
+    {
+      "id": "SL-20260914",
+      "symbol": "JPN225",
+      "date": "2026-10-23",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "62726.1796875",
+      "bounce_atr": "2105.109375"
+    },
+    {
+      "id": "SL-20260929",
+      "symbol": "JPN225",
+      "date": "2026-10-15",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "64699.48828125",
+      "bounce_atr": "1012.80859375"
+    },
+    {
+      "id": "SL-20261015",
+      "symbol": "JPN225",
+      "date": "2026-10-19",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "64092.73828125",
+      "bounce_atr": "1311.890625"
+    },
+    {
+      "id": "SL-20261020",
+      "symbol": "JPN225",
+      "date": "2026-10-22",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "63807.1484375",
+      "bounce_atr": "1024.140625"
+    },
+    {
+      "id": "SL-20261023",
+      "symbol": "JPN225",
+      "date": "2026-11-04",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "61462.609375",
+      "bounce_atr": "1191.37109375"
+    },
+    {
+      "id": "FVG-S-20260831",
+      "symbol": "XAUUSD",
+      "date": "2026-09-03",
+      "source": "fvg",
+      "side": "sell",
+      "touch_price": "4521.5",
+      "bounce_atr": "188.5"
+    },
+    {
+      "id": "FVG-S-20260929",
+      "symbol": "XAUUSD",
+      "date": "2026-09-30",
+      "source": "fvg",
+      "side": "sell",
+      "touch_price": "4218.1000976562",
+      "bounce_atr": "126.9001464844"
+    },
+    {
+      "id": "FVG-S-20261023",
+      "symbol": "XAUUSD",
+      "date": "2026-10-27",
+      "source": "fvg",
+      "side": "sell",
+      "touch_price": "4050.1999511719",
+      "bounce_atr": "170.8999023438"
+    },
+    {
+      "id": "SH-20260529",
+      "symbol": "XAUUSD",
+      "date": "2026-08-21",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "4627.1000976562",
+      "bounce_atr": "132.1000976562"
+    },
+    {
+      "id": "SH-20260930",
+      "symbol": "XAUUSD",
+      "date": "2026-10-02",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "4251.1000976562",
+      "bounce_atr": "159.9001464844"
+    },
+    {
+      "id": "SH-20261006",
+      "symbol": "XAUUSD",
+      "date": "2026-10-09",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "4212.3999023438",
+      "bounce_atr": "117.3999023438"
+    },
+    {
+      "id": "SH-20261028",
+      "symbol": "XAUUSD",
+      "date": "2026-11-05",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "4097.2001953125",
+      "bounce_atr": "62.1000976562"
+    },
+    {
+      "id": "SL-20260630",
+      "symbol": "XAUUSD",
+      "date": "2026-10-30",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "3955.3999023438",
+      "bounce_atr": "200.3999023438"
+    },
+    {
+      "id": "SL-20260717",
+      "symbol": "XAUUSD",
+      "date": "2026-10-30",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "3963",
+      "bounce_atr": "192.7998046875"
+    },
+    {
+      "id": "SL-20260729",
+      "symbol": "XAUUSD",
+      "date": "2026-10-23",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "3993.8000488281",
+      "bounce_atr": "103.4001464844"
+    },
+    {
+      "id": "SL-20260814",
+      "symbol": "XAUUSD",
+      "date": "2026-09-02",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "4365.5",
+      "bounce_atr": "193"
+    },
+    {
+      "id": "SL-20260819",
+      "symbol": "XAUUSD",
+      "date": "2026-09-01",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "4378",
+      "bounce_atr": "180.5"
+    },
+    {
+      "id": "SL-20260902",
+      "symbol": "XAUUSD",
+      "date": "2026-09-14",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "4329.2001953125",
+      "bounce_atr": "110.599609375"
+    },
+    {
+      "id": "SL-20260908",
+      "symbol": "XAUUSD",
+      "date": "2026-09-10",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "4381",
+      "bounce_atr": "63.8999023438"
+    },
+    {
+      "id": "SL-20260914",
+      "symbol": "XAUUSD",
+      "date": "2026-09-16",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "4293",
+      "bounce_atr": "146.7998046875"
+    },
+    {
+      "id": "SL-20260928",
+      "symbol": "XAUUSD",
+      "date": "2026-10-06",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "4143.1000976562",
+      "bounce_atr": "99.1997070312"
+    },
+    {
+      "id": "SL-20261023",
+      "symbol": "XAUUSD",
+      "date": "2026-10-30",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "3989.1000976562",
+      "bounce_atr": "166.6997070312"
+    }
   ],
+  "week_reset": false,
+  "symbols_added": [
+    "BTCUSD",
+    "EURUSD",
+    "HK50",
+    "JPN225",
+    "XAUUSD"
+  ],
+  "errors": [],
   "data_source": "Yahoo Finance (XAUUSD via GC=F); not Pepperstone"
 }

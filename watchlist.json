@@ -1,5 +1,11 @@
 {
   "week_id": "2026-11-09",
-  "symbols": [],
-  "updated_at": "2026-11-09T00:07:10+08:00"
+  "symbols": [
+    "BTCUSD",
+    "EURUSD",
+    "HK50",
+    "JPN225",
+    "XAUUSD"
+  ],
+  "updated_at": "2026-11-09T04:08:06+08:00"
 }
