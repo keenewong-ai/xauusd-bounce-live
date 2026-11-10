@@ -1,23 +1,13 @@
 {
-  "updated_at": "2026-11-10T19:53:18+08:00",
+  "updated_at": "2026-11-10T23:51:39+08:00",
   "asof": "2026-11-10",
   "touch_start": "2026-08-10",
   "touch_end": "2026-11-10",
   "week_id": "2026-11-09",
-  "hist_rows": 191,
+  "hist_rows": 190,
   "hist_bounce_ok": 122,
-  "levels_rows": 26,
-  "new_bounces": [
-    {
-      "id": "SH-20261105",
-      "symbol": "XAUUSD",
-      "date": "2026-11-09",
-      "source": "swing",
-      "side": "sh",
-      "touch_price": "4155.7998046875",
-      "bounce_atr": "79.5998535156"
-    }
-  ],
+  "levels_rows": 24,
+  "new_bounces": [],
   "week_reset": false,
   "symbols_added": [],
   "errors": [],
