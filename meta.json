@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T03:50:00+08:00",
+  "updated_at": "2026-11-13T07:47:19+08:00",
   "asof": "2026-11-12",
   "touch_start": "2026-08-13",
   "touch_end": "2026-11-13",
@@ -7,17 +7,7 @@
   "hist_rows": 196,
   "hist_bounce_ok": 125,
   "levels_rows": 19,
-  "new_bounces": [
-    {
-      "id": "FVG-S-20260717",
-      "symbol": "JPN225",
-      "date": "2026-08-13",
-      "source": "fvg",
-      "side": "sell",
-      "touch_price": "66441.7734375",
-      "bounce_atr": "1307.79296875"
-    }
-  ],
+  "new_bounces": [],
   "week_reset": false,
   "symbols_added": [],
   "errors": [],
