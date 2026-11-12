@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T11:55:10+08:00",
+  "updated_at": "2026-11-12T15:50:41+08:00",
   "asof": "2026-11-12",
   "touch_start": "2026-08-12",
   "touch_end": "2026-11-12",
@@ -7,35 +7,7 @@
   "hist_rows": 195,
   "hist_bounce_ok": 126,
   "levels_rows": 21,
-  "new_bounces": [
-    {
-      "id": "SH-20261014",
-      "symbol": "HK50",
-      "date": "2026-11-05",
-      "source": "swing",
-      "side": "sh",
-      "touch_price": "24524.630859375",
-      "bounce_atr": "536.19140625"
-    },
-    {
-      "id": "SH-20261016",
-      "symbol": "HK50",
-      "date": "2026-11-05",
-      "source": "swing",
-      "side": "sh",
-      "touch_price": "24392.30078125",
-      "bounce_atr": "403.861328125"
-    },
-    {
-      "id": "SL-20261104",
-      "symbol": "JPN225",
-      "date": "2026-11-06",
-      "source": "swing",
-      "side": "sl",
-      "touch_price": "60030.1015625",
-      "bounce_atr": "1758.33984375"
-    }
-  ],
+  "new_bounces": [],
   "week_reset": false,
   "symbols_added": [],
   "errors": [],
