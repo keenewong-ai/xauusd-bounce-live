@@ -1,13 +1,23 @@
 {
-  "updated_at": "2026-11-13T19:50:08+08:00",
+  "updated_at": "2026-11-13T23:53:15+08:00",
   "asof": "2026-11-13",
   "touch_start": "2026-08-13",
   "touch_end": "2026-11-13",
   "week_id": "2026-11-09",
-  "hist_rows": 593,
-  "hist_bounce_ok": 382,
+  "hist_rows": 594,
+  "hist_bounce_ok": 383,
   "levels_rows": 76,
-  "new_bounces": [],
+  "new_bounces": [
+    {
+      "id": "SL-20261030",
+      "symbol": "XAUUSD",
+      "date": "2026-11-12",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "3879.3000488281",
+      "bounce_atr": "47.8999023438"
+    }
+  ],
   "week_reset": false,
   "symbols_added": [],
   "seeded_symbols": [],
