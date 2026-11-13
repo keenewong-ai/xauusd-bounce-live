@@ -1,6 +1,6 @@
 # xauusd-bounce-live
 
-Live bounce list（Yahoo Finance，非 Pepperstone）for XAUUSD / JPN225 / EURUSD / BTCUSD / HK50.
+Live bounce list（Yahoo Finance，非 Pepperstone）for XAUUSD / JPN225 / BTCUSD / HK50 and Pepperstone Majors + Minors (AUDUSD, EURUSD, GBPUSD, USDCAD, USDCHF, USDJPY, AUDNZD, EURNZD, GBPNZD, NZDCAD, NZDCHF, NZDJPY, NZDUSD).
 
 - Site: https://keenewong-ai.github.io/xauusd-bounce-live/
 - Hist site (untouched): https://keenewong-ai.github.io/xauusd-bounce-list/

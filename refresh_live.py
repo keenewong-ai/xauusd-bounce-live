@@ -30,11 +30,26 @@ MIN_ATR_MULT = 0.5
 BOUNCE_BARS = 5
 
 SYMBOLS = [
+    # Existing live universe
     ("XAUUSD", "GC=F"),
     ("JPN225", "^N225"),
     ("EURUSD", "EURUSD=X"),
     ("BTCUSD", "BTC-USD"),
     ("HK50", "^HSI"),
+    # Pepperstone majors (EURUSD already listed above)
+    ("AUDUSD", "AUDUSD=X"),
+    ("GBPUSD", "GBPUSD=X"),
+    ("USDCAD", "USDCAD=X"),
+    ("USDCHF", "USDCHF=X"),
+    ("USDJPY", "USDJPY=X"),
+    # Pepperstone minors
+    ("AUDNZD", "AUDNZD=X"),
+    ("EURNZD", "EURNZD=X"),
+    ("GBPNZD", "GBPNZD=X"),
+    ("NZDCAD", "NZDCAD=X"),
+    ("NZDCHF", "NZDCHF=X"),
+    ("NZDJPY", "NZDJPY=X"),
+    ("NZDUSD", "NZDUSD=X"),
 ]
 
 HEADER_A = [
@@ -501,6 +516,30 @@ def is_bounce_ok(r: dict) -> bool:
     return str(r.get("bounce_ok", "")).strip().lower() in ("1", "true", "yes", "y", "ok")
 
 
+def published_symbols(path: Path) -> set[str]:
+    if not path.exists():
+        return set()
+    try:
+        with path.open(newline="") as f:
+            return {str(row.get("symbol", "")).strip() for row in csv.DictReader(f) if row.get("symbol")}
+    except Exception:
+        return set()
+
+
+def bounce_ok_keys_from_csv(path: Path) -> set[str]:
+    if not path.exists():
+        return set()
+    try:
+        keys: set[str] = set()
+        with path.open(newline="") as f:
+            for row in csv.DictReader(f):
+                if is_bounce_ok(row):
+                    keys.add(event_key(row))
+        return keys
+    except Exception:
+        return set()
+
+
 def load_json(path: Path, default):
     if not path.exists():
         return default
@@ -524,6 +563,12 @@ def refresh(push: bool = False, asof_override: date | None = None) -> dict:
     all_b: list[dict] = []
     asof_dates: list[str] = []
     errors: list[str] = []
+    succeeded: list[str] = []
+
+    hist_path = SITE_DIR / "data_hist.csv"
+    levels_path = SITE_DIR / "data_levels.csv"
+    prev_published_keys = bounce_ok_keys_from_csv(hist_path)
+    prev_published_symbols = published_symbols(hist_path)
 
     for sym, ticker in SYMBOLS:
         try:
@@ -541,16 +586,42 @@ def refresh(push: bool = False, asof_override: date | None = None) -> dict:
         all_a.extend(rows_a_sw)
         all_b.extend(rows_b_fvg)
         all_b.extend(rows_b_sw)
+        succeeded.append(sym)
         if rows_b_fvg or rows_b_sw:
             asof_dates.append((rows_b_fvg or rows_b_sw)[0]["asof_date"])
         print(f"{sym}: A fvg={len(rows_a_fvg)} swing={len(rows_a_sw)} | "
               f"B fvg={len(rows_b_fvg)} swing={len(rows_b_sw)}", file=sys.stderr)
 
+    known_failed = [sym for sym, _ticker in SYMBOLS if sym in prev_published_symbols and sym not in succeeded]
+    if not succeeded or known_failed:
+        reason = (
+            "all symbol downloads failed; leaving published CSVs and bounce state unchanged"
+            if not succeeded
+            else (
+                "download failed for previously published symbol(s) "
+                + ", ".join(known_failed)
+                + "; leaving published CSVs and bounce state unchanged"
+            )
+        )
+        summary = {
+            "ok": False,
+            "aborted": True,
+            "abort_reason": reason,
+            "updated_at": updated_at,
+            "week_id": week_id,
+            "succeeded": succeeded,
+            "new_bounces": 0,
+            "symbols_added": [],
+            "errors": errors,
+        }
+        print(json.dumps(summary, ensure_ascii=False))
+        return summary
+
     all_a_sorted = sorted(all_a, key=lambda r: (r["date"], r["symbol"], r["source"], r["id"]))
     all_b_sorted = sorted(all_b, key=lambda r: (r["symbol"], r["source"], r["id"]))
 
-    write_csv(SITE_DIR / "data_hist.csv", all_a_sorted, HEADER_A)
-    write_csv(SITE_DIR / "data_levels.csv", all_b_sorted, HEADER_B)
+    write_csv(hist_path, all_a_sorted, HEADER_A)
+    write_csv(levels_path, all_b_sorted, HEADER_B)
 
     # ---- watchlist / new bounce detection ----
     bounce_rows = [r for r in all_a_sorted if is_bounce_ok(r)]
@@ -573,6 +644,21 @@ def refresh(push: bool = False, asof_override: date | None = None) -> dict:
     first_run = prev is None or "keys" not in (prev or {})
     prev_keys = set((prev or {}).get("keys", []))
 
+    # If last_bounce_ok was lost (e.g. a failed run wiped it) but published hist remains,
+    # rebuild the baseline so a later successful refresh does not notify the whole backfill.
+    if not prev_keys and prev_published_keys:
+        prev_keys = set(prev_published_keys)
+        first_run = False
+
+    prev_symbols = {k.split("|")[0] for k in prev_keys}
+    seeded_symbols = sorted({r["symbol"] for r in bounce_rows if r["symbol"] not in prev_symbols})
+    seeded_set = set(seeded_symbols)
+    seeded_bounce_ok = sum(1 for r in bounce_rows if r["symbol"] in seeded_set)
+    seeded_bounce_ok_by_symbol = {}
+    for r in bounce_rows:
+        if r["symbol"] in seeded_set:
+            seeded_bounce_ok_by_symbol[r["symbol"]] = seeded_bounce_ok_by_symbol.get(r["symbol"], 0) + 1
+
     if first_run:
         # Seed snapshot; only treat current-ISO-week bounce_ok as "new" for watchlist
         week_start = iso_week_monday(today)
@@ -581,7 +667,11 @@ def refresh(push: bool = False, asof_override: date | None = None) -> dict:
             if date.fromisoformat(current_keys[k]["date"]) >= week_start
         ]
     else:
-        new_list = [current_keys[k] for k in sorted(current_keys) if k not in prev_keys]
+        # First ingest of a newly added symbol is a baseline backfill, not a fresh alert.
+        new_list = [
+            current_keys[k] for k in sorted(current_keys)
+            if k not in prev_keys and current_keys[k]["symbol"] not in seeded_set
+        ]
 
     symbols_added: list[str] = []
     for ev in new_list:
@@ -615,8 +705,11 @@ def refresh(push: bool = False, asof_override: date | None = None) -> dict:
         "new_bounces": new_list,
         "week_reset": week_reset,
         "symbols_added": symbols_added,
+        "seeded_symbols": seeded_symbols,
+        "seeded_bounce_ok": seeded_bounce_ok,
+        "seeded_bounce_ok_by_symbol": seeded_bounce_ok_by_symbol,
         "errors": errors,
-        "data_source": "Yahoo Finance (XAUUSD via GC=F); not Pepperstone",
+        "data_source": "Yahoo Finance (XAUUSD via GC=F; FX via PAIR=X); not Pepperstone",
     }
     (SITE_DIR / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n")
 
@@ -631,9 +724,13 @@ def refresh(push: bool = False, asof_override: date | None = None) -> dict:
         "levels_rows": len(all_b_sorted),
         "new_bounces": len(new_list),
         "symbols_added": symbols_added,
+        "seeded_symbols": seeded_symbols,
+        "seeded_bounce_ok": seeded_bounce_ok,
+        "seeded_bounce_ok_by_symbol": seeded_bounce_ok_by_symbol,
         "watch_symbols": watch["symbols"],
         "errors": errors,
         "first_run": first_run,
+        "succeeded": succeeded,
     }
 
     if push:
@@ -651,7 +748,8 @@ def refresh(push: bool = False, asof_override: date | None = None) -> dict:
 def _git_push_site() -> None:
     """Commit site data files and push to origin main (Pages)."""
     subprocess.run(["git", "add", "data_hist.csv", "data_levels.csv", "watchlist.json", "meta.json",
-                    "index.html", "app.js", "styles.css"], cwd=SITE_DIR, check=False)
+                    "index.html", "app.js", "styles.css", "refresh_live.py", "README.md"],
+                   cwd=SITE_DIR, check=False)
     # state stays local (not published) — ensure .gitignore
     st = subprocess.run(["git", "status", "--porcelain"], cwd=SITE_DIR, capture_output=True, text=True)
     if not st.stdout.strip():

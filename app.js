@@ -155,6 +155,30 @@ function fmtTaipei(iso) {
   }
 }
 
+const SYMBOL_ORDER = [
+  'XAUUSD','JPN225','BTCUSD','HK50',
+  'AUDUSD','EURUSD','GBPUSD','USDCAD','USDCHF','USDJPY',
+  'AUDNZD','EURNZD','GBPNZD','NZDCAD','NZDCHF','NZDJPY','NZDUSD'
+];
+
+function refreshSymbolFilter() {
+  const sel = $('filterSymbol');
+  if (!sel) return;
+  const current = sel.value;
+  const found = new Set();
+  for (const r of histRows.concat(levelRows)) {
+    const s = String(r.symbol || '').toUpperCase();
+    if (s) found.add(s);
+  }
+  const ordered = SYMBOL_ORDER.filter(s => found.has(s));
+  for (const s of [...found].sort()) {
+    if (!ordered.includes(s)) ordered.push(s);
+  }
+  sel.innerHTML = '<option value="">全部</option>' +
+    ordered.map(s => `<option value="${s}">${s}</option>`).join('');
+  if (current && [...sel.options].some(o => o.value === current)) sel.value = current;
+}
+
 function renderWatch() {
   const chips = $('watchChips');
   const emptyEl = $('watchEmpty');
@@ -339,5 +363,6 @@ Promise.all([
   if (levelsText && levelsText.trim()) levelRows = normalizeLevels(parseCsv(levelsText));
   if (watch) watchlist = watch;
   if (meta) metaInfo = meta;
+  refreshSymbolFilter();
   render();
 });
