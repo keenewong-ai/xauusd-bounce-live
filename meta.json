@@ -1,13 +1,23 @@
 {
-  "updated_at": "2026-11-14T23:51:59+08:00",
+  "updated_at": "2026-11-15T03:52:09+08:00",
   "asof": "2026-11-14",
-  "touch_start": "2026-08-14",
-  "touch_end": "2026-11-14",
+  "touch_start": "2026-08-15",
+  "touch_end": "2026-11-15",
   "week_id": "2026-11-09",
-  "hist_rows": 582,
-  "hist_bounce_ok": 370,
+  "hist_rows": 567,
+  "hist_bounce_ok": 361,
   "levels_rows": 85,
-  "new_bounces": [],
+  "new_bounces": [
+    {
+      "id": "FVG-S-20260731",
+      "symbol": "USDCHF",
+      "date": "2026-08-18",
+      "source": "fvg",
+      "side": "sell",
+      "touch_price": "0.812680006",
+      "bounce_atr": "0.0178800225"
+    }
+  ],
   "week_reset": false,
   "symbols_added": [],
   "seeded_symbols": [],
