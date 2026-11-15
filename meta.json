@@ -1,26 +1,26 @@
 {
-  "updated_at": "2026-11-16T03:48:03+08:00",
+  "updated_at": "2026-11-16T07:48:14+08:00",
   "asof": "2026-11-15",
   "touch_start": "2026-08-16",
   "touch_end": "2026-11-16",
   "week_id": "2026-11-16",
-  "hist_rows": 573,
-  "hist_bounce_ok": 362,
-  "levels_rows": 85,
+  "hist_rows": 576,
+  "hist_bounce_ok": 363,
+  "levels_rows": 80,
   "new_bounces": [
     {
-      "id": "SH-20261111",
-      "symbol": "NZDCHF",
-      "date": "2026-11-13",
+      "id": "SL-20261105",
+      "symbol": "GBPNZD",
+      "date": "2026-11-10",
       "source": "swing",
-      "side": "sh",
-      "touch_price": "0.4639500082",
-      "bounce_atr": "0.0054399967"
+      "side": "sl",
+      "touch_price": "2.3846900463",
+      "bounce_atr": "0.0083298683"
     }
   ],
-  "week_reset": true,
+  "week_reset": false,
   "symbols_added": [
-    "NZDCHF"
+    "GBPNZD"
   ],
   "seeded_symbols": [],
   "seeded_bounce_ok": 0,
