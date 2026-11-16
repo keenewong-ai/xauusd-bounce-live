@@ -1,15 +1,45 @@
 {
-  "updated_at": "2026-11-16T11:50:32+08:00",
+  "updated_at": "2026-11-16T15:49:43+08:00",
   "asof": "2026-11-16",
   "touch_start": "2026-08-16",
   "touch_end": "2026-11-16",
   "week_id": "2026-11-16",
-  "hist_rows": 574,
-  "hist_bounce_ok": 363,
-  "levels_rows": 80,
-  "new_bounces": [],
+  "hist_rows": 579,
+  "hist_bounce_ok": 366,
+  "levels_rows": 78,
+  "new_bounces": [
+    {
+      "id": "SL-20260803",
+      "symbol": "BTCUSD",
+      "date": "2026-11-15",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "62226.578125",
+      "bounce_atr": "3136.859375"
+    },
+    {
+      "id": "SL-20260814",
+      "symbol": "BTCUSD",
+      "date": "2026-11-15",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "62487.69921875",
+      "bounce_atr": "2875.73828125"
+    },
+    {
+      "id": "SL-20260816",
+      "symbol": "BTCUSD",
+      "date": "2026-11-15",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "62648.57421875",
+      "bounce_atr": "2714.86328125"
+    }
+  ],
   "week_reset": false,
-  "symbols_added": [],
+  "symbols_added": [
+    "BTCUSD"
+  ],
   "seeded_symbols": [],
   "seeded_bounce_ok": 0,
   "seeded_bounce_ok_by_symbol": {},
