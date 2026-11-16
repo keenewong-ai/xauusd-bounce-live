@@ -1,27 +1,15 @@
 {
-  "updated_at": "2026-11-16T07:48:14+08:00",
-  "asof": "2026-11-15",
+  "updated_at": "2026-11-16T11:50:32+08:00",
+  "asof": "2026-11-16",
   "touch_start": "2026-08-16",
   "touch_end": "2026-11-16",
   "week_id": "2026-11-16",
-  "hist_rows": 576,
+  "hist_rows": 574,
   "hist_bounce_ok": 363,
   "levels_rows": 80,
-  "new_bounces": [
-    {
-      "id": "SL-20261105",
-      "symbol": "GBPNZD",
-      "date": "2026-11-10",
-      "source": "swing",
-      "side": "sl",
-      "touch_price": "2.3846900463",
-      "bounce_atr": "0.0083298683"
-    }
-  ],
+  "new_bounces": [],
   "week_reset": false,
-  "symbols_added": [
-    "GBPNZD"
-  ],
+  "symbols_added": [],
   "seeded_symbols": [],
   "seeded_bounce_ok": 0,
   "seeded_bounce_ok_by_symbol": {},
