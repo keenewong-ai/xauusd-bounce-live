@@ -1,27 +1,15 @@
 {
-  "updated_at": "2026-11-17T03:54:21+08:00",
+  "updated_at": "2026-11-17T07:49:26+08:00",
   "asof": "2026-11-16",
   "touch_start": "2026-08-17",
   "touch_end": "2026-11-17",
   "week_id": "2026-11-16",
-  "hist_rows": 575,
+  "hist_rows": 574,
   "hist_bounce_ok": 363,
-  "levels_rows": 74,
-  "new_bounces": [
-    {
-      "id": "SH-20261105",
-      "symbol": "NZDCAD",
-      "date": "2026-11-09",
-      "source": "swing",
-      "side": "sh",
-      "touch_price": "0.789040029",
-      "bounce_atr": "0.0036700368"
-    }
-  ],
+  "levels_rows": 76,
+  "new_bounces": [],
   "week_reset": false,
-  "symbols_added": [
-    "NZDCAD"
-  ],
+  "symbols_added": [],
   "seeded_symbols": [],
   "seeded_bounce_ok": 0,
   "seeded_bounce_ok_by_symbol": {},
