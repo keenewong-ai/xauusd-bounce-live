@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-17T11:51:14+08:00",
+  "updated_at": "2026-11-17T15:54:12+08:00",
   "asof": "2026-11-17",
   "touch_start": "2026-08-17",
   "touch_end": "2026-11-17",
@@ -7,21 +7,9 @@
   "hist_rows": 577,
   "hist_bounce_ok": 363,
   "levels_rows": 76,
-  "new_bounces": [
-    {
-      "id": "SL-20261110",
-      "symbol": "AUDNZD",
-      "date": "2026-11-16",
-      "source": "swing",
-      "side": "sl",
-      "touch_price": "1.2232300043",
-      "bounce_atr": "0.0057100058"
-    }
-  ],
+  "new_bounces": [],
   "week_reset": false,
-  "symbols_added": [
-    "AUDNZD"
-  ],
+  "symbols_added": [],
   "seeded_symbols": [],
   "seeded_bounce_ok": 0,
   "seeded_bounce_ok_by_symbol": {},
