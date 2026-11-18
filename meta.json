@@ -1,13 +1,32 @@
 {
-  "updated_at": "2026-11-18T07:48:03+08:00",
-  "asof": "2026-11-17",
+  "updated_at": "2026-11-18T15:53:47+08:00",
+  "asof": "2026-11-18",
   "touch_start": "2026-08-18",
   "touch_end": "2026-11-18",
   "week_id": "2026-11-16",
-  "hist_rows": 571,
-  "hist_bounce_ok": 357,
-  "levels_rows": 81,
-  "new_bounces": [],
+  "hist_rows": 576,
+  "hist_bounce_ok": 359,
+  "levels_rows": 85,
+  "new_bounces": [
+    {
+      "id": "SL-20261110",
+      "symbol": "AUDNZD",
+      "date": "2026-11-16",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "1.2232300043",
+      "bounce_atr": "0.0056300163"
+    },
+    {
+      "id": "FVG-B-20261110",
+      "symbol": "NZDCHF",
+      "date": "2026-11-17",
+      "source": "fvg",
+      "side": "buy",
+      "touch_price": "0.4607000053",
+      "bounce_atr": "0.0026400089"
+    }
+  ],
   "week_reset": false,
   "symbols_added": [],
   "seeded_symbols": [],
