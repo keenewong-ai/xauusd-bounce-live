@@ -1,25 +1,67 @@
 {
-  "updated_at": "2026-11-18T23:48:40+08:00",
+  "updated_at": "2026-11-19T03:48:54+08:00",
   "asof": "2026-11-18",
-  "touch_start": "2026-08-18",
-  "touch_end": "2026-11-18",
+  "touch_start": "2026-08-19",
+  "touch_end": "2026-11-19",
   "week_id": "2026-11-16",
-  "hist_rows": 576,
-  "hist_bounce_ok": 360,
-  "levels_rows": 80,
+  "hist_rows": 573,
+  "hist_bounce_ok": 359,
+  "levels_rows": 79,
   "new_bounces": [
     {
-      "id": "SL-20261112",
-      "symbol": "NZDCHF",
-      "date": "2026-11-16",
-      "source": "swing",
-      "side": "sl",
-      "touch_price": "0.461499989",
-      "bounce_atr": "0.0022000074"
+      "id": "FVG-B-20260817",
+      "symbol": "EURUSD",
+      "date": "2026-08-19",
+      "source": "fvg",
+      "side": "buy",
+      "touch_price": "1.1575547457",
+      "bounce_atr": "0.0136797428"
+    },
+    {
+      "id": "FVG-B-20260817",
+      "symbol": "NZDJPY",
+      "date": "2026-08-19",
+      "source": "fvg",
+      "side": "buy",
+      "touch_price": "93.8249969482",
+      "bounce_atr": "1.3490066528"
+    },
+    {
+      "id": "FVG-B-20260817",
+      "symbol": "NZDUSD",
+      "date": "2026-08-19",
+      "source": "fvg",
+      "side": "buy",
+      "touch_price": "0.5894002318",
+      "bounce_atr": "0.0094810724"
+    },
+    {
+      "id": "FVG-S-20260817",
+      "symbol": "USDCAD",
+      "date": "2026-08-19",
+      "source": "fvg",
+      "side": "sell",
+      "touch_price": "1.3873399496",
+      "bounce_atr": "0.0140799284"
+    },
+    {
+      "id": "FVG-S-20260731",
+      "symbol": "USDCHF",
+      "date": "2026-08-19",
+      "source": "fvg",
+      "side": "sell",
+      "touch_price": "0.812680006",
+      "bounce_atr": "0.0178800225"
     }
   ],
   "week_reset": false,
-  "symbols_added": [],
+  "symbols_added": [
+    "EURUSD",
+    "NZDJPY",
+    "NZDUSD",
+    "USDCAD",
+    "USDCHF"
+  ],
   "seeded_symbols": [],
   "seeded_bounce_ok": 0,
   "seeded_bounce_ok_by_symbol": {},
