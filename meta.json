@@ -1,54 +1,22 @@
 {
-  "updated_at": "2026-11-20T03:51:21+08:00",
+  "updated_at": "2026-11-20T07:51:07+08:00",
   "asof": "2026-11-19",
   "touch_start": "2026-08-20",
   "touch_end": "2026-11-20",
   "week_id": "2026-11-16",
   "hist_rows": 558,
-  "hist_bounce_ok": 357,
-  "levels_rows": 80,
-  "new_bounces": [
-    {
-      "id": "FVG-B-20260817",
-      "symbol": "EURUSD",
-      "date": "2026-09-02",
-      "source": "fvg",
-      "side": "buy",
-      "touch_price": "1.1575547457",
-      "bounce_atr": "0.0078105927"
-    },
-    {
-      "id": "FVG-S-20260817",
-      "symbol": "USDCAD",
-      "date": "2026-08-26",
-      "source": "fvg",
-      "side": "sell",
-      "touch_price": "1.3873399496",
-      "bounce_atr": "0.0034999847"
-    },
-    {
-      "id": "FVG-S-20260731",
-      "symbol": "USDCHF",
-      "date": "2026-09-02",
-      "source": "fvg",
-      "side": "sell",
-      "touch_price": "0.812680006",
-      "bounce_atr": "0.0064899921"
-    }
-  ],
+  "hist_bounce_ok": 354,
+  "levels_rows": 86,
+  "new_bounces": [],
   "week_reset": false,
-  "symbols_added": [
-    "EURUSD",
-    "USDCAD",
-    "USDCHF"
-  ],
+  "symbols_added": [],
   "seeded_symbols": [],
   "seeded_bounce_ok": 0,
   "seeded_bounce_ok_by_symbol": {},
   "errors": [],
   "data_source": "Yahoo Finance (XAUUSD via GC=F; FX via PAIR=X); not Pepperstone",
-  "hist_follow_up_ok": 333,
+  "hist_follow_up_ok": 327,
   "new_follow_ups": [],
   "follow_seeded": false,
-  "follow_evaluated": 354
+  "follow_evaluated": 348
 }
