@@ -1,4 +1,4 @@
-const COLS_HIST = ['symbol','id','date','weekday_hk','weekday_ny','source','side','level_top','level_bot','touch_price','wo','fwd_1_high','fwd_1_low','fwd_3_high','fwd_3_low','fwd_5_high','fwd_5_low','bounce_atr','bounce_ok'];
+const COLS_HIST = ['symbol','id','date','weekday_hk','weekday_ny','source','side','level_top','level_bot','touch_price','wo','fwd_1_high','fwd_1_low','fwd_3_high','fwd_3_low','fwd_5_high','fwd_5_low','bounce_atr','bounce_ok','extreme_price','extreme_date','impulse_ok','structure_ok','follow_up_ok','follow_pending','sw1_time','sw2_time','follow_error'];
 const COLS_LEVELS = ['symbol','id','asof_date','source','side','level_top','level_bot','spot_close','confirm_date','dist_to_spot','wo','wo_id'];
 
 let view = 'hist';
@@ -42,6 +42,23 @@ function splitCsvLine(line) {
 function isBounce(v) {
   const s = String(v ?? '').trim().toLowerCase();
   return s === '1' || s === 'true' || s === 'yes' || s === 'y' || s === 'ok';
+}
+
+function isPending(v) {
+  const s = String(v ?? '').trim().toLowerCase();
+  return s === '1' || s === 'true' || s === 'yes' || s === 'y';
+}
+
+function flagLabel(v, pending) {
+  if (isBounce(v)) return '有';
+  if (pending) return '未完';
+  if (v === '' || v == null) return '—';
+  return '無';
+}
+
+function shortTs(s) {
+  if (!s) return '—';
+  return String(s).replace('T', ' ').replace(/:00Z$/, 'Z').replace(/:00$/, '');
 }
 
 function sideLabel(side) {
@@ -116,7 +133,16 @@ function normalizeHist(parsed) {
     fwd_3_high: r.fwd_3_high || '',
     fwd_3_low: r.fwd_3_low || '',
     fwd_5_high: r.fwd_5_high || '',
-    fwd_5_low: r.fwd_5_low || ''
+    fwd_5_low: r.fwd_5_low || '',
+    extreme_price: r.extreme_price || '',
+    extreme_date: r.extreme_date || '',
+    impulse_ok: r.impulse_ok || '',
+    structure_ok: r.structure_ok || '',
+    follow_up_ok: r.follow_up_ok || '',
+    follow_pending: r.follow_pending || '',
+    sw1_time: r.sw1_time || '',
+    sw2_time: r.sw2_time || '',
+    follow_error: r.follow_error || ''
   }));
 }
 
@@ -207,6 +233,10 @@ function filtered() {
     if (src && String(r.source || '').toLowerCase() !== src) return false;
     if (side && String(r.side || '').toLowerCase() !== side) return false;
     if (view === 'hist') {
+      const fu = $('filterFollow') ? $('filterFollow').value : '';
+      if (fu === 'structure' && !isBounce(r.follow_up_ok)) return false;
+      if (fu === 'impulse' && !isBounce(r.impulse_ok)) return false;
+      if (fu === 'pending' && !isPending(r.follow_pending)) return false;
       if (from && r.date < from) return false;
       if (to && r.date > to) return false;
     }
@@ -224,6 +254,7 @@ function setThead() {
     thead.innerHTML = `<tr>
       <th>品種</th><th>ID</th><th>日期</th><th>星期（香港）</th><th>星期（紐約）</th>
       <th>來源</th><th>方向</th><th>觸及價</th><th>反彈(ATR)</th><th>關卡</th><th>WO（參考）</th>
+      <th>反彈極點</th><th>極點日</th><th>明顯跟進</th><th>結構跟進</th><th>HL／LH</th><th>HH／LL</th>
     </tr>`;
   } else {
     thead.innerHTML = `<tr>
@@ -245,6 +276,8 @@ function render() {
   $('legendLevels').classList.toggle('hidden', view !== 'levels');
   $('fromWrap').classList.toggle('hidden', view !== 'hist');
   $('toWrap').classList.toggle('hidden', view !== 'hist');
+  const fu = $('followWrap');
+  if (fu) fu.classList.toggle('hidden', view !== 'hist');
 
   const rows = activeRows();
   empty.classList.toggle('hidden', list.length > 0 || rows.length > 0);
@@ -272,7 +305,13 @@ function render() {
         <td>${esc(r.touch_price || '—')}</td>
         <td>${esc(r.bounce_atr || '—')}</td>
         <td>${esc(level)}</td>
-        <td>${esc(r.wo_id || r.wo || '—')}</td>`;
+        <td>${esc(r.wo_id || r.wo || '—')}</td>
+        <td>${esc(r.extreme_price || '—')}</td>
+        <td>${esc(r.extreme_date || '—')}</td>
+        <td>${esc(flagLabel(r.impulse_ok, isPending(r.follow_pending)))}</td>
+        <td>${esc(flagLabel(r.follow_up_ok || r.structure_ok, isPending(r.follow_pending)))}</td>
+        <td>${esc(shortTs(r.sw1_time))}</td>
+        <td>${esc(shortTs(r.sw2_time))}</td>`;
     } else {
       tr.innerHTML = `
         <td>${esc(r.symbol || '—')}</td>
@@ -310,7 +349,7 @@ document.querySelectorAll('.tab').forEach(btn => {
   btn.addEventListener('click', () => setView(btn.dataset.view));
 });
 
-['filterSymbol','filterSource','filterSide','from','to'].forEach(id => $(id).addEventListener('input', render));
+['filterSymbol','filterSource','filterSide','filterFollow','from','to'].forEach(id => { const el = $(id); if (el) el.addEventListener('input', render); });
 
 $('export').addEventListener('click', () => {
   const list = filtered().map(r => {

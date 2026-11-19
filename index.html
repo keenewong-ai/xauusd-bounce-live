@@ -39,6 +39,7 @@
       <div><strong>A 規則</strong>：第一次觸及仍生效關卡 · 前瞻 1／3／5 根日線 · 反彈 ≥ 0.5×ATR(14) · <strong>唔用 WO 過濾</strong></div>
       <div><strong>預設區間</strong>：滾動近 3 個月（以最新 refresh 為準）</div>
       <div><strong>留意清單</strong>：每次出現新 bounce_ok 會加入「本周正在留意」；每個 ISO 周一（week opening）重置</div>
+      <div><strong>1H 跟進</strong>：反彈成功後先計日線「反彈極點」（觸及日＋之後最多 5 根嘅最低／最高），再由極點後 48 根 1H K 分開計「明顯跟進」（連續 3 根同向，或走勢 ≥ 0.5×1H ATR）同「結構跟進」（升勢：HL 再破中間高；跌勢：LH 再破中間低）。follow_up_ok 要明顯跟進同結構跟進兩邊都過；窗口未滿 48 根且未完成結構就標「未完」。第一次歷史回填唔當新通知。</div>
     </section>
     <section class="legend hidden" id="legendLevels">
       <div><strong>B 規則</strong>：仍未破嘅 gap／SH／SL，相對 <strong>Yahoo 最新收市</strong>仍喺正確一邊</div>
@@ -85,6 +86,14 @@
           <option value="sl">Swing Low</option>
         </select>
       </label>
+      <label id="followWrap">1H 跟進
+        <select id="filterFollow">
+          <option value="">全部</option>
+          <option value="structure">有結構跟進</option>
+          <option value="impulse">有明顯跟進</option>
+          <option value="pending">跟進尚未完成</option>
+        </select>
+      </label>
       <label id="fromWrap">由
         <input id="from" type="date" />
       </label>
@@ -104,7 +113,7 @@
 
     <footer>
       <span id="meta">未載入資料</span>
-      <span class="foot-note">Live Yahoo · hist=取消 WO · B=相對最新收 · watchlist 每 ISO 周一重置</span>
+      <span class="foot-note">Live Yahoo · hist=取消 WO · B=相對最新收 · 1H 跟進 · watchlist 每 ISO 周一重置</span>
     </footer>
   </div>
   <script src="app.js"></script>

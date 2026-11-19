@@ -1,21 +1,21 @@
 {
-  "updated_at": "2026-11-19T11:55:46+08:00",
+  "updated_at": "2026-11-19T15:54:34+08:00",
   "asof": "2026-11-19",
   "touch_start": "2026-08-19",
   "touch_end": "2026-11-19",
   "week_id": "2026-11-16",
-  "hist_rows": 577,
-  "hist_bounce_ok": 359,
-  "levels_rows": 86,
+  "hist_rows": 579,
+  "hist_bounce_ok": 360,
+  "levels_rows": 80,
   "new_bounces": [
     {
-      "id": "SL-20261112",
-      "symbol": "NZDCHF",
-      "date": "2026-11-16",
+      "id": "SL-20261115",
+      "symbol": "BTCUSD",
+      "date": "2026-11-18",
       "source": "swing",
       "side": "sl",
-      "touch_price": "0.461499989",
-      "bounce_atr": "0.0024000108"
+      "touch_price": "62017.8828125",
+      "bounce_atr": "1674.47265625"
     }
   ],
   "week_reset": false,
@@ -24,5 +24,32 @@
   "seeded_bounce_ok": 0,
   "seeded_bounce_ok_by_symbol": {},
   "errors": [],
-  "data_source": "Yahoo Finance (XAUUSD via GC=F; FX via PAIR=X); not Pepperstone"
+  "data_source": "Yahoo Finance (XAUUSD via GC=F; FX via PAIR=X); not Pepperstone",
+  "hist_follow_up_ok": 337,
+  "new_follow_ups": [
+    {
+      "id": "SL-20261110",
+      "symbol": "AUDNZD",
+      "date": "2026-11-16",
+      "source": "swing",
+      "side": "sl",
+      "extreme_price": "1.2130899429",
+      "impulse_ok": "true",
+      "sw1_time": "2026-11-19 13:00 HKT",
+      "sw2_time": "2026-11-19 15:00 HKT"
+    },
+    {
+      "id": "SL-20261115",
+      "symbol": "BTCUSD",
+      "date": "2026-11-18",
+      "source": "swing",
+      "side": "sl",
+      "extreme_price": "62017.37890625",
+      "impulse_ok": "true",
+      "sw1_time": "2026-11-19 09:00 HKT",
+      "sw2_time": "2026-11-19 12:00 HKT"
+    }
+  ],
+  "follow_seeded": false,
+  "follow_evaluated": 357
 }

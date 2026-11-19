@@ -19,7 +19,10 @@ from zoneinfo import ZoneInfo
 
 import numpy as np
 import pandas as pd
+import time
 import yfinance as yf
+
+from follow_up import annotate_events, load_yahoo_1h
 
 TAIPEI = ZoneInfo("Asia/Taipei")
 SITE_DIR = Path("/workspace/bounce-live")
@@ -57,6 +60,9 @@ HEADER_A = [
     "touch_price", "wo", "wo_id",
     "fwd_1_high", "fwd_1_low", "fwd_3_high", "fwd_3_low", "fwd_5_high", "fwd_5_low",
     "bounce_atr", "bounce_ok",
+    "extreme_price", "extreme_date",
+    "impulse_ok", "structure_ok", "follow_up_ok", "follow_pending",
+    "sw1_time", "sw2_time", "follow_error",
 ]
 
 HEADER_B = [
@@ -492,7 +498,7 @@ def write_csv(path: Path, rows: list[dict], header: list[str]) -> None:
     num_cols = {
         "level_top", "level_bot", "touch_price", "wo", "spot_close", "dist_to_spot",
         "fwd_1_high", "fwd_1_low", "fwd_3_high", "fwd_3_low",
-        "fwd_5_high", "fwd_5_low", "bounce_atr",
+        "fwd_5_high", "fwd_5_low", "bounce_atr", "extreme_price",
     }
     with path.open("w", newline="") as f:
         w = csv.DictWriter(f, fieldnames=header, extrasaction="ignore")
@@ -582,6 +588,20 @@ def refresh(push: bool = False, asof_override: date | None = None) -> dict:
         rows_a_sw = swing_events_no_wo(df, sym, touch_start, touch_end)
         rows_b_fvg = fvg_levels_vs_spot(df, sym, asof)
         rows_b_sw = swing_levels_vs_spot(df, sym, asof)
+        rows_a_all = rows_a_fvg + rows_a_sw
+        df_1h = None
+        err_1h = None
+        if any(is_bounce_ok(r) for r in rows_a_all):
+            try:
+                h1_start = (touch_start - timedelta(days=5)).isoformat()
+                h1_end = (today + timedelta(days=4)).isoformat()
+                df_1h = load_yahoo_1h(ticker, h1_start, h1_end)
+            except Exception as e:
+                err_1h = f"{sym} 1h: {e}"
+                errors.append(err_1h)
+            time.sleep(0.35)
+        annotate_events(rows_a_fvg, df, df_1h, err_1h)
+        annotate_events(rows_a_sw, df, df_1h, err_1h)
         all_a.extend(rows_a_fvg)
         all_a.extend(rows_a_sw)
         all_b.extend(rows_b_fvg)
@@ -692,6 +712,62 @@ def refresh(push: bool = False, asof_override: date | None = None) -> dict:
     prev_path.write_text(json.dumps(prev_out, ensure_ascii=False, indent=2) + "\n")
     watch_path.write_text(json.dumps(watch, ensure_ascii=False, indent=2) + "\n")
 
+    def is_follow_ok(r: dict) -> bool:
+        return str(r.get("follow_up_ok", "")).strip().lower() in ("1", "true", "yes", "y", "ok")
+
+    def is_follow_evaluated(r: dict) -> bool:
+        if not is_bounce_ok(r):
+            return False
+        if str(r.get("follow_error", "")).strip():
+            return False
+        pending = str(r.get("follow_pending", "")).strip().lower() in ("1", "true", "yes", "y")
+        if pending and not is_follow_ok(r):
+            return False
+        return str(r.get("impulse_ok", "")).strip() != "" or str(r.get("structure_ok", "")).strip() != ""
+
+    follow_rows = [r for r in bounce_rows if is_follow_ok(r)]
+    follow_keys = {event_key(r): {
+        "id": r["id"], "symbol": r["symbol"], "date": r["date"],
+        "source": r["source"], "side": r["side"],
+        "extreme_price": fmt_num(r.get("extreme_price")),
+        "impulse_ok": r.get("impulse_ok", ""),
+        "sw1_time": r.get("sw1_time", ""), "sw2_time": r.get("sw2_time", ""),
+    } for r in follow_rows}
+    eval_keys = {event_key(r) for r in bounce_rows if is_follow_evaluated(r)}
+    follow_path = STATE_DIR / "last_follow_up_ok.json"
+    eval_path = STATE_DIR / "last_follow_eval.json"
+    prev_follow_keys = set((load_json(follow_path, {}) or {}).get("keys", []))
+    prev_eval_keys = set((load_json(eval_path, {}) or {}).get("keys", []))
+    week_start = iso_week_monday(today)
+    new_follow_list = []
+    for k in sorted(follow_keys):
+        ev = follow_keys[k]
+        if ev["symbol"] in seeded_set:
+            continue
+        if k in prev_follow_keys:
+            continue
+        first_eval = k not in prev_eval_keys
+        if first_eval:
+            # Historical first pass is a baseline, not a flood of alerts.
+            if date.fromisoformat(ev["date"]) >= week_start:
+                new_follow_list.append(ev)
+        else:
+            # Already evaluated as not-ok, now completed structure.
+            new_follow_list.append(ev)
+    follow_seeded = not prev_eval_keys
+    follow_path.write_text(json.dumps({
+        "updated_at": updated_at,
+        "week_id": week_id,
+        "keys": sorted(follow_keys.keys()),
+        "count": len(follow_keys),
+    }, ensure_ascii=False, indent=2) + "\n")
+    eval_path.write_text(json.dumps({
+        "updated_at": updated_at,
+        "week_id": week_id,
+        "keys": sorted(eval_keys),
+        "count": len(eval_keys),
+    }, ensure_ascii=False, indent=2) + "\n")
+
     asof_common = max(asof_dates) if asof_dates else today.isoformat()
     meta = {
         "updated_at": updated_at,
@@ -710,6 +786,10 @@ def refresh(push: bool = False, asof_override: date | None = None) -> dict:
         "seeded_bounce_ok_by_symbol": seeded_bounce_ok_by_symbol,
         "errors": errors,
         "data_source": "Yahoo Finance (XAUUSD via GC=F; FX via PAIR=X); not Pepperstone",
+        "hist_follow_up_ok": len(follow_rows),
+        "new_follow_ups": new_follow_list,
+        "follow_seeded": follow_seeded,
+        "follow_evaluated": len(eval_keys),
     }
     (SITE_DIR / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n")
 
@@ -723,6 +803,10 @@ def refresh(push: bool = False, asof_override: date | None = None) -> dict:
         "hist_bounce_ok": len(bounce_rows),
         "levels_rows": len(all_b_sorted),
         "new_bounces": len(new_list),
+        "new_follow_ups": len(new_follow_list),
+        "hist_follow_up_ok": len(follow_rows),
+        "follow_seeded": follow_seeded,
+        "follow_evaluated": len(eval_keys),
         "symbols_added": symbols_added,
         "seeded_symbols": seeded_symbols,
         "seeded_bounce_ok": seeded_bounce_ok,
@@ -748,7 +832,7 @@ def refresh(push: bool = False, asof_override: date | None = None) -> dict:
 def _git_push_site() -> None:
     """Commit site data files and push to origin main (Pages)."""
     subprocess.run(["git", "add", "data_hist.csv", "data_levels.csv", "watchlist.json", "meta.json",
-                    "index.html", "app.js", "styles.css", "refresh_live.py", "README.md"],
+                    "index.html", "app.js", "styles.css", "refresh_live.py", "follow_up.py", "README.md"],
                    cwd=SITE_DIR, check=False)
     # state stays local (not published) — ensure .gitignore
     st = subprocess.run(["git", "status", "--porcelain"], cwd=SITE_DIR, capture_output=True, text=True)
