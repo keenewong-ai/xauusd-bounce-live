@@ -3,9 +3,11 @@
   "symbols": [
     "AUDNZD",
     "BTCUSD",
+    "EURNZD",
     "GBPNZD",
     "NZDCAD",
-    "NZDCHF"
+    "NZDCHF",
+    "NZDJPY"
   ],
-  "updated_at": "2026-11-19T15:54:34+08:00"
+  "updated_at": "2026-11-19T19:53:22+08:00"
 }
