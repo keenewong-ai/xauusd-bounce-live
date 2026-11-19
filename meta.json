@@ -1,65 +1,22 @@
 {
-  "updated_at": "2026-11-19T19:53:22+08:00",
+  "updated_at": "2026-11-19T23:51:45+08:00",
   "asof": "2026-11-19",
   "touch_start": "2026-08-19",
   "touch_end": "2026-11-19",
   "week_id": "2026-11-16",
   "hist_rows": 581,
   "hist_bounce_ok": 363,
-  "levels_rows": 78,
-  "new_bounces": [
-    {
-      "id": "FVG-S-20261110",
-      "symbol": "EURNZD",
-      "date": "2026-11-12",
-      "source": "fvg",
-      "side": "sell",
-      "touch_price": "1.9957100153",
-      "bounce_atr": "0.0086200237"
-    },
-    {
-      "id": "FVG-S-20261110",
-      "symbol": "GBPNZD",
-      "date": "2026-11-12",
-      "source": "fvg",
-      "side": "sell",
-      "touch_price": "2.3878400326",
-      "bounce_atr": "0.0105400085"
-    },
-    {
-      "id": "SL-20261106",
-      "symbol": "NZDJPY",
-      "date": "2026-11-17",
-      "source": "swing",
-      "side": "sl",
-      "touch_price": "87.547996521",
-      "bounce_atr": "0.9270019531"
-    }
-  ],
+  "levels_rows": 79,
+  "new_bounces": [],
   "week_reset": false,
-  "symbols_added": [
-    "EURNZD",
-    "NZDJPY"
-  ],
+  "symbols_added": [],
   "seeded_symbols": [],
   "seeded_bounce_ok": 0,
   "seeded_bounce_ok_by_symbol": {},
   "errors": [],
   "data_source": "Yahoo Finance (XAUUSD via GC=F; FX via PAIR=X); not Pepperstone",
   "hist_follow_up_ok": 339,
-  "new_follow_ups": [
-    {
-      "id": "SL-20261106",
-      "symbol": "NZDJPY",
-      "date": "2026-11-17",
-      "source": "swing",
-      "side": "sl",
-      "extreme_price": "87.3000030518",
-      "impulse_ok": "true",
-      "sw1_time": "2026-11-19 10:00 HKT",
-      "sw2_time": "2026-11-19 13:00 HKT"
-    }
-  ],
+  "new_follow_ups": [],
   "follow_seeded": false,
-  "follow_evaluated": 359
+  "follow_evaluated": 360
 }
