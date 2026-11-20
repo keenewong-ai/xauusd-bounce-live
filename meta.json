@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-11-20T19:50:27+08:00",
+  "updated_at": "2026-11-20T23:48:17+08:00",
   "asof": "2026-11-20",
   "touch_start": "2026-08-20",
   "touch_end": "2026-11-20",
   "week_id": "2026-11-16",
-  "hist_rows": 569,
-  "hist_bounce_ok": 362,
-  "levels_rows": 85,
+  "hist_rows": 568,
+  "hist_bounce_ok": 361,
+  "levels_rows": 84,
   "new_bounces": [],
   "week_reset": false,
   "symbols_added": [],
@@ -16,7 +16,19 @@
   "errors": [],
   "data_source": "Yahoo Finance (XAUUSD via GC=F; FX via PAIR=X); not Pepperstone",
   "hist_follow_up_ok": 332,
-  "new_follow_ups": [],
+  "new_follow_ups": [
+    {
+      "id": "SL-20261110",
+      "symbol": "AUDNZD",
+      "date": "2026-11-16",
+      "source": "swing",
+      "side": "sl",
+      "extreme_price": "1.209800005",
+      "impulse_ok": "true",
+      "sw1_time": "2026-11-20 21:00 HKT",
+      "sw2_time": "2026-11-20 23:00 HKT"
+    }
+  ],
   "follow_seeded": false,
   "follow_evaluated": 353
 }
