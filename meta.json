@@ -1,34 +1,55 @@
 {
-  "updated_at": "2026-11-20T23:48:17+08:00",
+  "updated_at": "2026-11-21T03:53:28+08:00",
   "asof": "2026-11-20",
-  "touch_start": "2026-08-20",
-  "touch_end": "2026-11-20",
+  "touch_start": "2026-08-21",
+  "touch_end": "2026-11-21",
   "week_id": "2026-11-16",
-  "hist_rows": 568,
-  "hist_bounce_ok": 361,
-  "levels_rows": 84,
-  "new_bounces": [],
+  "hist_rows": 559,
+  "hist_bounce_ok": 359,
+  "levels_rows": 82,
+  "new_bounces": [
+    {
+      "id": "SL-20260806",
+      "symbol": "GBPNZD",
+      "date": "2026-08-21",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "2.2843999863",
+      "bounce_atr": "0.0079901218"
+    },
+    {
+      "id": "FVG-B-20260820",
+      "symbol": "NZDUSD",
+      "date": "2026-08-26",
+      "source": "fvg",
+      "side": "buy",
+      "touch_price": "0.5934189558",
+      "bounce_atr": "0.0032397509"
+    }
+  ],
   "week_reset": false,
-  "symbols_added": [],
+  "symbols_added": [
+    "NZDUSD"
+  ],
   "seeded_symbols": [],
   "seeded_bounce_ok": 0,
   "seeded_bounce_ok_by_symbol": {},
   "errors": [],
   "data_source": "Yahoo Finance (XAUUSD via GC=F; FX via PAIR=X); not Pepperstone",
-  "hist_follow_up_ok": 332,
+  "hist_follow_up_ok": 329,
   "new_follow_ups": [
     {
-      "id": "SL-20261110",
-      "symbol": "AUDNZD",
-      "date": "2026-11-16",
+      "id": "SH-20261113",
+      "symbol": "NZDCHF",
+      "date": "2026-11-19",
       "source": "swing",
-      "side": "sl",
-      "extreme_price": "1.209800005",
+      "side": "sh",
+      "extreme_price": "0.4660800099",
       "impulse_ok": "true",
-      "sw1_time": "2026-11-20 21:00 HKT",
-      "sw2_time": "2026-11-20 23:00 HKT"
+      "sw1_time": "2026-11-20 06:00 HKT",
+      "sw2_time": "2026-11-21 01:00 HKT"
     }
   ],
   "follow_seeded": false,
-  "follow_evaluated": 353
+  "follow_evaluated": 350
 }
