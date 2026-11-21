@@ -1,13 +1,23 @@
 {
-  "updated_at": "2026-11-21T19:49:14+08:00",
+  "updated_at": "2026-11-21T23:55:48+08:00",
   "asof": "2026-11-21",
   "touch_start": "2026-08-21",
   "touch_end": "2026-11-21",
   "week_id": "2026-11-16",
   "hist_rows": 564,
-  "hist_bounce_ok": 360,
-  "levels_rows": 85,
-  "new_bounces": [],
+  "hist_bounce_ok": 361,
+  "levels_rows": 86,
+  "new_bounces": [
+    {
+      "id": "SL-20260701",
+      "symbol": "BTCUSD",
+      "date": "2026-11-20",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "57747.765625",
+      "bounce_atr": "2871.41796875"
+    }
+  ],
   "week_reset": false,
   "symbols_added": [],
   "seeded_symbols": [],
@@ -15,8 +25,31 @@
   "seeded_bounce_ok_by_symbol": {},
   "errors": [],
   "data_source": "Yahoo Finance (XAUUSD via GC=F; FX via PAIR=X); not Pepperstone",
-  "hist_follow_up_ok": 330,
-  "new_follow_ups": [],
+  "hist_follow_up_ok": 335,
+  "new_follow_ups": [
+    {
+      "id": "SL-20260701",
+      "symbol": "BTCUSD",
+      "date": "2026-11-20",
+      "source": "swing",
+      "side": "sl",
+      "extreme_price": "55631.57421875",
+      "impulse_ok": "true",
+      "sw1_time": "2026-11-21 16:00 HKT",
+      "sw2_time": "2026-11-21 20:00 HKT"
+    },
+    {
+      "id": "SL-20261115",
+      "symbol": "BTCUSD",
+      "date": "2026-11-18",
+      "source": "swing",
+      "side": "sl",
+      "extreme_price": "55631.57421875",
+      "impulse_ok": "true",
+      "sw1_time": "2026-11-21 16:00 HKT",
+      "sw2_time": "2026-11-21 20:00 HKT"
+    }
+  ],
   "follow_seeded": false,
-  "follow_evaluated": 351
+  "follow_evaluated": 356
 }
