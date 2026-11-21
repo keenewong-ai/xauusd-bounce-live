@@ -1,23 +1,13 @@
 {
-  "updated_at": "2026-11-21T11:56:58+08:00",
+  "updated_at": "2026-11-21T15:52:42+08:00",
   "asof": "2026-11-21",
   "touch_start": "2026-08-21",
   "touch_end": "2026-11-21",
   "week_id": "2026-11-16",
   "hist_rows": 564,
   "hist_bounce_ok": 360,
-  "levels_rows": 84,
-  "new_bounces": [
-    {
-      "id": "FVG-S-20261117",
-      "symbol": "JPN225",
-      "date": "2026-11-18",
-      "source": "fvg",
-      "side": "sell",
-      "touch_price": "59369.140625",
-      "bounce_atr": "2932.4921875"
-    }
-  ],
+  "levels_rows": 85,
+  "new_bounces": [],
   "week_reset": false,
   "symbols_added": [],
   "seeded_symbols": [],
@@ -26,19 +16,7 @@
   "errors": [],
   "data_source": "Yahoo Finance (XAUUSD via GC=F; FX via PAIR=X); not Pepperstone",
   "hist_follow_up_ok": 330,
-  "new_follow_ups": [
-    {
-      "id": "FVG-S-20261117",
-      "symbol": "JPN225",
-      "date": "2026-11-18",
-      "source": "fvg",
-      "side": "sell",
-      "extreme_price": "59660.609375",
-      "impulse_ok": "true",
-      "sw1_time": "2026-11-19 12:00 HKT",
-      "sw2_time": "2026-11-20 08:00 HKT"
-    }
-  ],
+  "new_follow_ups": [],
   "follow_seeded": false,
   "follow_evaluated": 351
 }
