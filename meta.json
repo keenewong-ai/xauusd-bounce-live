@@ -1,27 +1,15 @@
 {
-  "updated_at": "2026-11-23T03:47:47+08:00",
+  "updated_at": "2026-11-23T07:55:04+08:00",
   "asof": "2026-11-22",
   "touch_start": "2026-08-23",
   "touch_end": "2026-11-23",
   "week_id": "2026-11-23",
-  "hist_rows": 560,
+  "hist_rows": 562,
   "hist_bounce_ok": 357,
-  "levels_rows": 86,
-  "new_bounces": [
-    {
-      "id": "FVG-B-20260820",
-      "symbol": "NZDUSD",
-      "date": "2026-08-26",
-      "source": "fvg",
-      "side": "buy",
-      "touch_price": "0.5934189558",
-      "bounce_atr": "0.0032397509"
-    }
-  ],
-  "week_reset": true,
-  "symbols_added": [
-    "NZDUSD"
-  ],
+  "levels_rows": 88,
+  "new_bounces": [],
+  "week_reset": false,
+  "symbols_added": [],
   "seeded_symbols": [],
   "seeded_bounce_ok": 0,
   "seeded_bounce_ok_by_symbol": {},
