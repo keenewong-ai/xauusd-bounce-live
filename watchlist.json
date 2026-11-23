@@ -1,5 +1,8 @@
 {
   "week_id": "2026-11-23",
-  "symbols": [],
-  "updated_at": "2026-11-23T19:50:48+08:00"
+  "symbols": [
+    "BTCUSD",
+    "USDJPY"
+  ],
+  "updated_at": "2026-11-23T23:51:08+08:00"
 }
