@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-11-23T11:53:36+08:00",
+  "updated_at": "2026-11-23T15:51:02+08:00",
   "asof": "2026-11-23",
   "touch_start": "2026-08-23",
   "touch_end": "2026-11-23",
   "week_id": "2026-11-23",
-  "hist_rows": 562,
+  "hist_rows": 563,
   "hist_bounce_ok": 357,
-  "levels_rows": 89,
+  "levels_rows": 87,
   "new_bounces": [],
   "week_reset": false,
   "symbols_added": [],
@@ -15,8 +15,8 @@
   "seeded_bounce_ok_by_symbol": {},
   "errors": [],
   "data_source": "Yahoo Finance (XAUUSD via GC=F; FX via PAIR=X); not Pepperstone",
-  "hist_follow_up_ok": 331,
+  "hist_follow_up_ok": 332,
   "new_follow_ups": [],
   "follow_seeded": false,
-  "follow_evaluated": 352
+  "follow_evaluated": 353
 }
