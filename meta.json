@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24T15:56:28+08:00",
+  "updated_at": "2026-11-24T19:48:36+08:00",
   "asof": "2026-11-24",
   "touch_start": "2026-08-24",
   "touch_end": "2026-11-24",
@@ -7,35 +7,7 @@
   "hist_rows": 567,
   "hist_bounce_ok": 363,
   "levels_rows": 101,
-  "new_bounces": [
-    {
-      "id": "SL-20260706",
-      "symbol": "BTCUSD",
-      "date": "2026-11-20",
-      "source": "swing",
-      "side": "sl",
-      "touch_price": "61275.828125",
-      "bounce_atr": "3202.53515625"
-    },
-    {
-      "id": "SL-20260708",
-      "symbol": "BTCUSD",
-      "date": "2026-11-19",
-      "source": "swing",
-      "side": "sl",
-      "touch_price": "61492.6484375",
-      "bounce_atr": "2985.71484375"
-    },
-    {
-      "id": "SL-20260713",
-      "symbol": "BTCUSD",
-      "date": "2026-11-19",
-      "source": "swing",
-      "side": "sl",
-      "touch_price": "61769",
-      "bounce_atr": "2709.36328125"
-    }
-  ],
+  "new_bounces": [],
   "week_reset": false,
   "symbols_added": [],
   "seeded_symbols": [],
