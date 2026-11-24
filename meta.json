@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25T03:50:00+08:00",
+  "updated_at": "2026-11-25T07:55:11+08:00",
   "asof": "2026-11-24",
   "touch_start": "2026-08-25",
   "touch_end": "2026-11-25",
@@ -7,40 +7,16 @@
   "hist_rows": 564,
   "hist_bounce_ok": 363,
   "levels_rows": 97,
-  "new_bounces": [
-    {
-      "id": "FVG-S-20261120",
-      "symbol": "AUDNZD",
-      "date": "2026-11-23",
-      "source": "fvg",
-      "side": "sell",
-      "touch_price": "1.2140200138",
-      "bounce_atr": "0.0044800043"
-    }
-  ],
+  "new_bounces": [],
   "week_reset": false,
-  "symbols_added": [
-    "AUDNZD"
-  ],
+  "symbols_added": [],
   "seeded_symbols": [],
   "seeded_bounce_ok": 0,
   "seeded_bounce_ok_by_symbol": {},
   "errors": [],
   "data_source": "Yahoo Finance (XAUUSD via GC=F; FX via PAIR=X); not Pepperstone",
   "hist_follow_up_ok": 340,
-  "new_follow_ups": [
-    {
-      "id": "FVG-S-20261120",
-      "symbol": "AUDNZD",
-      "date": "2026-11-23",
-      "source": "fvg",
-      "side": "sell",
-      "extreme_price": "1.2187000513",
-      "impulse_ok": "true",
-      "sw1_time": "2026-11-24 00:00 HKT",
-      "sw2_time": "2026-11-24 03:00 HKT"
-    }
-  ],
+  "new_follow_ups": [],
   "follow_seeded": false,
   "follow_evaluated": 362
 }
