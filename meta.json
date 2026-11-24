@@ -1,36 +1,26 @@
 {
-  "updated_at": "2026-11-24T23:48:09+08:00",
+  "updated_at": "2026-11-25T03:50:00+08:00",
   "asof": "2026-11-24",
-  "touch_start": "2026-08-24",
-  "touch_end": "2026-11-24",
+  "touch_start": "2026-08-25",
+  "touch_end": "2026-11-25",
   "week_id": "2026-11-23",
-  "hist_rows": 567,
+  "hist_rows": 564,
   "hist_bounce_ok": 363,
-  "levels_rows": 100,
+  "levels_rows": 97,
   "new_bounces": [
     {
-      "id": "SH-20261119",
-      "symbol": "USDCAD",
-      "date": "2026-11-23",
-      "source": "swing",
-      "side": "sh",
-      "touch_price": "1.4356700182",
-      "bounce_atr": "0.0070700645"
-    },
-    {
       "id": "FVG-S-20261120",
-      "symbol": "XAUUSD",
+      "symbol": "AUDNZD",
       "date": "2026-11-23",
       "source": "fvg",
       "side": "sell",
-      "touch_price": "3638.1000976562",
-      "bounce_atr": "56"
+      "touch_price": "1.2140200138",
+      "bounce_atr": "0.0044800043"
     }
   ],
   "week_reset": false,
   "symbols_added": [
-    "USDCAD",
-    "XAUUSD"
+    "AUDNZD"
   ],
   "seeded_symbols": [],
   "seeded_bounce_ok": 0,
@@ -40,26 +30,15 @@
   "hist_follow_up_ok": 340,
   "new_follow_ups": [
     {
-      "id": "SH-20261119",
-      "symbol": "USDCAD",
-      "date": "2026-11-23",
-      "source": "swing",
-      "side": "sh",
-      "extreme_price": "1.4373799562",
-      "impulse_ok": "true",
-      "sw1_time": "2026-11-24 07:00 HKT",
-      "sw2_time": "2026-11-24 09:00 HKT"
-    },
-    {
       "id": "FVG-S-20261120",
-      "symbol": "XAUUSD",
+      "symbol": "AUDNZD",
       "date": "2026-11-23",
       "source": "fvg",
       "side": "sell",
-      "extreme_price": "3691",
+      "extreme_price": "1.2187000513",
       "impulse_ok": "true",
-      "sw1_time": "2026-11-24 03:00 HKT",
-      "sw2_time": "2026-11-24 05:00 HKT"
+      "sw1_time": "2026-11-24 00:00 HKT",
+      "sw2_time": "2026-11-24 03:00 HKT"
     }
   ],
   "follow_seeded": false,
