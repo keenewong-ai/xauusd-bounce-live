@@ -1,74 +1,50 @@
 {
-  "updated_at": "2026-11-24T11:54:09+08:00",
+  "updated_at": "2026-11-24T15:56:28+08:00",
   "asof": "2026-11-24",
   "touch_start": "2026-08-24",
   "touch_end": "2026-11-24",
   "week_id": "2026-11-23",
   "hist_rows": 567,
-  "hist_bounce_ok": 360,
+  "hist_bounce_ok": 363,
   "levels_rows": 101,
   "new_bounces": [
     {
-      "id": "SH-20261117",
-      "symbol": "EURNZD",
-      "date": "2026-11-23",
-      "source": "swing",
-      "side": "sh",
-      "touch_price": "2.0056600571",
-      "bounce_atr": "0.0069301128"
-    },
-    {
-      "id": "SL-20261106",
-      "symbol": "JPN225",
+      "id": "SL-20260706",
+      "symbol": "BTCUSD",
       "date": "2026-11-20",
       "source": "swing",
       "side": "sl",
-      "touch_price": "56745.80859375",
-      "bounce_atr": "2516.76171875"
+      "touch_price": "61275.828125",
+      "bounce_atr": "3202.53515625"
     },
     {
-      "id": "SL-20261118",
-      "symbol": "JPN225",
-      "date": "2026-11-20",
+      "id": "SL-20260708",
+      "symbol": "BTCUSD",
+      "date": "2026-11-19",
       "source": "swing",
       "side": "sl",
-      "touch_price": "58279.26171875",
-      "bounce_atr": "983.30859375"
+      "touch_price": "61492.6484375",
+      "bounce_atr": "2985.71484375"
     },
     {
-      "id": "SL-20261117",
-      "symbol": "USDJPY",
-      "date": "2026-11-20",
+      "id": "SL-20260713",
+      "symbol": "BTCUSD",
+      "date": "2026-11-19",
       "source": "swing",
       "side": "sl",
-      "touch_price": "158.8639984131",
-      "bounce_atr": "0.6199951172"
+      "touch_price": "61769",
+      "bounce_atr": "2709.36328125"
     }
   ],
   "week_reset": false,
-  "symbols_added": [
-    "EURNZD",
-    "JPN225"
-  ],
+  "symbols_added": [],
   "seeded_symbols": [],
   "seeded_bounce_ok": 0,
   "seeded_bounce_ok_by_symbol": {},
   "errors": [],
   "data_source": "Yahoo Finance (XAUUSD via GC=F; FX via PAIR=X); not Pepperstone",
-  "hist_follow_up_ok": 333,
-  "new_follow_ups": [
-    {
-      "id": "SH-20261117",
-      "symbol": "EURNZD",
-      "date": "2026-11-23",
-      "source": "swing",
-      "side": "sh",
-      "extreme_price": "2.0108499527",
-      "impulse_ok": "true",
-      "sw1_time": "2026-11-23 21:00 HKT",
-      "sw2_time": "2026-11-23 23:00 HKT"
-    }
-  ],
+  "hist_follow_up_ok": 338,
+  "new_follow_ups": [],
   "follow_seeded": false,
-  "follow_evaluated": 355
+  "follow_evaluated": 360
 }
