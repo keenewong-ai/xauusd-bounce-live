@@ -1,22 +1,67 @@
 {
-  "updated_at": "2026-11-24T19:48:36+08:00",
+  "updated_at": "2026-11-24T23:48:09+08:00",
   "asof": "2026-11-24",
   "touch_start": "2026-08-24",
   "touch_end": "2026-11-24",
   "week_id": "2026-11-23",
   "hist_rows": 567,
   "hist_bounce_ok": 363,
-  "levels_rows": 101,
-  "new_bounces": [],
+  "levels_rows": 100,
+  "new_bounces": [
+    {
+      "id": "SH-20261119",
+      "symbol": "USDCAD",
+      "date": "2026-11-23",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "1.4356700182",
+      "bounce_atr": "0.0070700645"
+    },
+    {
+      "id": "FVG-S-20261120",
+      "symbol": "XAUUSD",
+      "date": "2026-11-23",
+      "source": "fvg",
+      "side": "sell",
+      "touch_price": "3638.1000976562",
+      "bounce_atr": "56"
+    }
+  ],
   "week_reset": false,
-  "symbols_added": [],
+  "symbols_added": [
+    "USDCAD",
+    "XAUUSD"
+  ],
   "seeded_symbols": [],
   "seeded_bounce_ok": 0,
   "seeded_bounce_ok_by_symbol": {},
   "errors": [],
   "data_source": "Yahoo Finance (XAUUSD via GC=F; FX via PAIR=X); not Pepperstone",
-  "hist_follow_up_ok": 338,
-  "new_follow_ups": [],
+  "hist_follow_up_ok": 340,
+  "new_follow_ups": [
+    {
+      "id": "SH-20261119",
+      "symbol": "USDCAD",
+      "date": "2026-11-23",
+      "source": "swing",
+      "side": "sh",
+      "extreme_price": "1.4373799562",
+      "impulse_ok": "true",
+      "sw1_time": "2026-11-24 07:00 HKT",
+      "sw2_time": "2026-11-24 09:00 HKT"
+    },
+    {
+      "id": "FVG-S-20261120",
+      "symbol": "XAUUSD",
+      "date": "2026-11-23",
+      "source": "fvg",
+      "side": "sell",
+      "extreme_price": "3691",
+      "impulse_ok": "true",
+      "sw1_time": "2026-11-24 03:00 HKT",
+      "sw2_time": "2026-11-24 05:00 HKT"
+    }
+  ],
   "follow_seeded": false,
-  "follow_evaluated": 360
+  "follow_evaluated": 362
 }
