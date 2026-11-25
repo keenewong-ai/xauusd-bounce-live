@@ -1,54 +1,34 @@
 {
-  "updated_at": "2026-11-25T11:53:09+08:00",
+  "updated_at": "2026-11-25T15:49:23+08:00",
   "asof": "2026-11-25",
   "touch_start": "2026-08-25",
   "touch_end": "2026-11-25",
   "week_id": "2026-11-23",
-  "hist_rows": 569,
-  "hist_bounce_ok": 366,
-  "levels_rows": 108,
+  "hist_rows": 572,
+  "hist_bounce_ok": 367,
+  "levels_rows": 104,
   "new_bounces": [
     {
-      "id": "FVG-S-20261120",
+      "id": "FVG-S-20261123",
       "symbol": "HK50",
       "date": "2026-11-24",
       "source": "fvg",
       "side": "sell",
-      "touch_price": "22593.509765625",
-      "bounce_atr": "340.69921875"
-    },
-    {
-      "id": "SL-20261106",
-      "symbol": "JPN225",
-      "date": "2026-11-20",
-      "source": "swing",
-      "side": "sl",
-      "touch_price": "56745.80859375",
-      "bounce_atr": "2516.76171875"
-    },
-    {
-      "id": "SL-20261118",
-      "symbol": "JPN225",
-      "date": "2026-11-20",
-      "source": "swing",
-      "side": "sl",
-      "touch_price": "58279.26171875",
-      "bounce_atr": "983.30859375"
+      "touch_price": "22436.1796875",
+      "bounce_atr": "499.96875"
     }
   ],
   "week_reset": false,
-  "symbols_added": [
-    "HK50"
-  ],
+  "symbols_added": [],
   "seeded_symbols": [],
   "seeded_bounce_ok": 0,
   "seeded_bounce_ok_by_symbol": {},
   "errors": [],
   "data_source": "Yahoo Finance (XAUUSD via GC=F; FX via PAIR=X); not Pepperstone",
-  "hist_follow_up_ok": 342,
+  "hist_follow_up_ok": 343,
   "new_follow_ups": [
     {
-      "id": "FVG-S-20261120",
+      "id": "FVG-S-20261123",
       "symbol": "HK50",
       "date": "2026-11-24",
       "source": "fvg",
@@ -60,5 +40,5 @@
     }
   ],
   "follow_seeded": false,
-  "follow_evaluated": 364
+  "follow_evaluated": 365
 }
