@@ -1,23 +1,13 @@
 {
-  "updated_at": "2026-11-25T15:49:23+08:00",
+  "updated_at": "2026-11-25T19:53:09+08:00",
   "asof": "2026-11-25",
   "touch_start": "2026-08-25",
   "touch_end": "2026-11-25",
   "week_id": "2026-11-23",
   "hist_rows": 572,
   "hist_bounce_ok": 367,
-  "levels_rows": 104,
-  "new_bounces": [
-    {
-      "id": "FVG-S-20261123",
-      "symbol": "HK50",
-      "date": "2026-11-24",
-      "source": "fvg",
-      "side": "sell",
-      "touch_price": "22436.1796875",
-      "bounce_atr": "499.96875"
-    }
-  ],
+  "levels_rows": 103,
+  "new_bounces": [],
   "week_reset": false,
   "symbols_added": [],
   "seeded_symbols": [],
@@ -26,19 +16,7 @@
   "errors": [],
   "data_source": "Yahoo Finance (XAUUSD via GC=F; FX via PAIR=X); not Pepperstone",
   "hist_follow_up_ok": 343,
-  "new_follow_ups": [
-    {
-      "id": "FVG-S-20261123",
-      "symbol": "HK50",
-      "date": "2026-11-24",
-      "source": "fvg",
-      "side": "sell",
-      "extreme_price": "22647.5",
-      "impulse_ok": "true",
-      "sw1_time": "2026-11-24 12:30 HKT",
-      "sw2_time": "2026-11-24 14:30 HKT"
-    }
-  ],
+  "new_follow_ups": [],
   "follow_seeded": false,
   "follow_evaluated": 365
 }
