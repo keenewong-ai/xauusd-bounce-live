@@ -1,22 +1,46 @@
 {
-  "updated_at": "2026-11-25T23:56:53+08:00",
+  "updated_at": "2026-11-26T03:49:34+08:00",
   "asof": "2026-11-25",
-  "touch_start": "2026-08-25",
-  "touch_end": "2026-11-25",
+  "touch_start": "2026-08-26",
+  "touch_end": "2026-11-26",
   "week_id": "2026-11-23",
-  "hist_rows": 575,
-  "hist_bounce_ok": 367,
-  "levels_rows": 100,
-  "new_bounces": [],
+  "hist_rows": 568,
+  "hist_bounce_ok": 361,
+  "levels_rows": 95,
+  "new_bounces": [
+    {
+      "id": "SL-20261118",
+      "symbol": "EURUSD",
+      "date": "2026-11-23",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "1.095446229",
+      "bounce_atr": "0.0040589571"
+    }
+  ],
   "week_reset": false,
-  "symbols_added": [],
+  "symbols_added": [
+    "EURUSD"
+  ],
   "seeded_symbols": [],
   "seeded_bounce_ok": 0,
   "seeded_bounce_ok_by_symbol": {},
   "errors": [],
   "data_source": "Yahoo Finance (XAUUSD via GC=F; FX via PAIR=X); not Pepperstone",
-  "hist_follow_up_ok": 343,
-  "new_follow_ups": [],
+  "hist_follow_up_ok": 337,
+  "new_follow_ups": [
+    {
+      "id": "SL-20261118",
+      "symbol": "EURUSD",
+      "date": "2026-11-23",
+      "source": "swing",
+      "side": "sl",
+      "extreme_price": "1.0884354115",
+      "impulse_ok": "true",
+      "sw1_time": "2026-11-24 06:00 HKT",
+      "sw2_time": "2026-11-24 08:00 HKT"
+    }
+  ],
   "follow_seeded": false,
-  "follow_evaluated": 365
+  "follow_evaluated": 359
 }
