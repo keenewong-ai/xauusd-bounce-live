@@ -1,105 +1,44 @@
 {
-  "updated_at": "2026-11-26T11:55:25+08:00",
+  "updated_at": "2026-11-26T15:54:05+08:00",
   "asof": "2026-11-26",
   "touch_start": "2026-08-26",
   "touch_end": "2026-11-26",
   "week_id": "2026-11-23",
-  "hist_rows": 571,
-  "hist_bounce_ok": 365,
-  "levels_rows": 110,
+  "hist_rows": 572,
+  "hist_bounce_ok": 366,
+  "levels_rows": 109,
   "new_bounces": [
     {
-      "id": "SL-20261123",
-      "symbol": "AUDUSD",
+      "id": "SL-20261120",
+      "symbol": "XAUUSD",
       "date": "2026-11-25",
       "source": "swing",
       "side": "sl",
-      "touch_price": "0.6599701643",
-      "bounce_atr": "0.0047908425"
-    },
-    {
-      "id": "FVG-S-20261120",
-      "symbol": "HK50",
-      "date": "2026-11-24",
-      "source": "fvg",
-      "side": "sell",
-      "touch_price": "22593.509765625",
-      "bounce_atr": "677.62890625"
-    },
-    {
-      "id": "FVG-S-20261123",
-      "symbol": "HK50",
-      "date": "2026-11-24",
-      "source": "fvg",
-      "side": "sell",
-      "touch_price": "22436.1796875",
-      "bounce_atr": "520.298828125"
-    },
-    {
-      "id": "SL-20261123",
-      "symbol": "HK50",
-      "date": "2026-11-25",
-      "source": "swing",
-      "side": "sl",
-      "touch_price": "21998.05078125",
-      "bounce_atr": "545.69921875"
-    },
-    {
-      "id": "SL-20261106",
-      "symbol": "NZDCHF",
-      "date": "2026-11-25",
-      "source": "swing",
-      "side": "sl",
-      "touch_price": "0.4530000091",
-      "bounce_atr": "0.0036000013"
+      "touch_price": "3502.8999023438",
+      "bounce_atr": "131.8000488281"
     }
   ],
   "week_reset": false,
-  "symbols_added": [
-    "AUDUSD",
-    "NZDCHF"
-  ],
+  "symbols_added": [],
   "seeded_symbols": [],
   "seeded_bounce_ok": 0,
   "seeded_bounce_ok_by_symbol": {},
   "errors": [],
   "data_source": "Yahoo Finance (XAUUSD via GC=F; FX via PAIR=X); not Pepperstone",
-  "hist_follow_up_ok": 339,
+  "hist_follow_up_ok": 340,
   "new_follow_ups": [
     {
-      "id": "SL-20261123",
-      "symbol": "AUDUSD",
+      "id": "SL-20261120",
+      "symbol": "XAUUSD",
       "date": "2026-11-25",
       "source": "swing",
       "side": "sl",
-      "extreme_price": "0.6559798717",
+      "extreme_price": "3425.1999511719",
       "impulse_ok": "true",
-      "sw1_time": "2026-11-26 06:00 HKT",
-      "sw2_time": "2026-11-26 08:00 HKT"
-    },
-    {
-      "id": "FVG-S-20261120",
-      "symbol": "HK50",
-      "date": "2026-11-24",
-      "source": "fvg",
-      "side": "sell",
-      "extreme_price": "22647.5",
-      "impulse_ok": "true",
-      "sw1_time": "2026-11-24 12:30 HKT",
-      "sw2_time": "2026-11-24 14:30 HKT"
-    },
-    {
-      "id": "FVG-S-20261123",
-      "symbol": "HK50",
-      "date": "2026-11-24",
-      "source": "fvg",
-      "side": "sell",
-      "extreme_price": "22647.5",
-      "impulse_ok": "true",
-      "sw1_time": "2026-11-24 12:30 HKT",
-      "sw2_time": "2026-11-24 14:30 HKT"
+      "sw1_time": "2026-11-26 09:00 HKT",
+      "sw2_time": "2026-11-26 12:00 HKT"
     }
   ],
   "follow_seeded": false,
-  "follow_evaluated": 361
+  "follow_evaluated": 362
 }
