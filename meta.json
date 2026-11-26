@@ -1,44 +1,57 @@
 {
-  "updated_at": "2026-11-26T15:54:05+08:00",
+  "updated_at": "2026-11-26T19:50:43+08:00",
   "asof": "2026-11-26",
   "touch_start": "2026-08-26",
   "touch_end": "2026-11-26",
   "week_id": "2026-11-23",
   "hist_rows": 572,
-  "hist_bounce_ok": 366,
+  "hist_bounce_ok": 367,
   "levels_rows": 109,
   "new_bounces": [
     {
-      "id": "SL-20261120",
-      "symbol": "XAUUSD",
+      "id": "FVG-B-20261112",
+      "symbol": "USDCHF",
       "date": "2026-11-25",
-      "source": "swing",
-      "side": "sl",
-      "touch_price": "3502.8999023438",
-      "bounce_atr": "131.8000488281"
+      "source": "fvg",
+      "side": "buy",
+      "touch_price": "0.8311399817",
+      "bounce_atr": "0.0037100315"
     }
   ],
   "week_reset": false,
-  "symbols_added": [],
+  "symbols_added": [
+    "USDCHF"
+  ],
   "seeded_symbols": [],
   "seeded_bounce_ok": 0,
   "seeded_bounce_ok_by_symbol": {},
   "errors": [],
   "data_source": "Yahoo Finance (XAUUSD via GC=F; FX via PAIR=X); not Pepperstone",
-  "hist_follow_up_ok": 340,
+  "hist_follow_up_ok": 342,
   "new_follow_ups": [
     {
-      "id": "SL-20261120",
-      "symbol": "XAUUSD",
+      "id": "SL-20261106",
+      "symbol": "NZDCHF",
       "date": "2026-11-25",
       "source": "swing",
       "side": "sl",
-      "extreme_price": "3425.1999511719",
+      "extreme_price": "0.4523000121",
       "impulse_ok": "true",
-      "sw1_time": "2026-11-26 09:00 HKT",
-      "sw2_time": "2026-11-26 12:00 HKT"
+      "sw1_time": "2026-11-26 12:00 HKT",
+      "sw2_time": "2026-11-26 15:00 HKT"
+    },
+    {
+      "id": "FVG-B-20261112",
+      "symbol": "USDCHF",
+      "date": "2026-11-25",
+      "source": "fvg",
+      "side": "buy",
+      "extreme_price": "0.8285800219",
+      "impulse_ok": "true",
+      "sw1_time": "2026-11-26 01:00 HKT",
+      "sw2_time": "2026-11-26 13:00 HKT"
     }
   ],
   "follow_seeded": false,
-  "follow_evaluated": 362
+  "follow_evaluated": 364
 }
