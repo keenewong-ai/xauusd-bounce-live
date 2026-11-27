@@ -1,12 +1,12 @@
 {
-  "updated_at": "2026-11-27T19:51:05+08:00",
+  "updated_at": "2026-11-27T23:53:17+08:00",
   "asof": "2026-11-27",
   "touch_start": "2026-08-27",
   "touch_end": "2026-11-27",
   "week_id": "2026-11-23",
   "hist_rows": 577,
   "hist_bounce_ok": 372,
-  "levels_rows": 101,
+  "levels_rows": 100,
   "new_bounces": [],
   "week_reset": false,
   "symbols_added": [],
@@ -15,31 +15,20 @@
   "seeded_bounce_ok_by_symbol": {},
   "errors": [],
   "data_source": "Yahoo Finance (XAUUSD via GC=F; FX via PAIR=X); not Pepperstone",
-  "hist_follow_up_ok": 345,
+  "hist_follow_up_ok": 346,
   "new_follow_ups": [
     {
       "id": "SL-20261124",
-      "symbol": "GBPNZD",
+      "symbol": "EURNZD",
       "date": "2026-11-26",
       "source": "swing",
       "side": "sl",
-      "extreme_price": "2.3826301098",
+      "extreme_price": "1.9936699867",
       "impulse_ok": "true",
       "sw1_time": "2026-11-27 14:00 HKT",
-      "sw2_time": "2026-11-27 17:00 HKT"
-    },
-    {
-      "id": "SH-20261124",
-      "symbol": "NZDUSD",
-      "date": "2026-11-26",
-      "source": "swing",
-      "side": "sh",
-      "extreme_price": "0.5506001711",
-      "impulse_ok": "true",
-      "sw1_time": "2026-11-27 16:00 HKT",
-      "sw2_time": "2026-11-27 18:00 HKT"
+      "sw2_time": "2026-11-27 23:00 HKT"
     }
   ],
   "follow_seeded": false,
-  "follow_evaluated": 366
+  "follow_evaluated": 367
 }
