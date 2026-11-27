@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-28T03:56:35+08:00",
+  "updated_at": "2026-11-28T07:51:16+08:00",
   "asof": "2026-11-27",
   "touch_start": "2026-08-28",
   "touch_end": "2026-11-28",
@@ -7,35 +7,7 @@
   "hist_rows": 573,
   "hist_bounce_ok": 368,
   "levels_rows": 104,
-  "new_bounces": [
-    {
-      "id": "FVG-S-20260819",
-      "symbol": "JPN225",
-      "date": "2026-08-28",
-      "source": "fvg",
-      "side": "sell",
-      "touch_price": "66833.5078125",
-      "bounce_atr": "3060.70703125"
-    },
-    {
-      "id": "FVG-S-20260820",
-      "symbol": "JPN225",
-      "date": "2026-08-28",
-      "source": "fvg",
-      "side": "sell",
-      "touch_price": "66325.3203125",
-      "bounce_atr": "2552.51953125"
-    },
-    {
-      "id": "FVG-S-20260817",
-      "symbol": "USDCAD",
-      "date": "2026-08-28",
-      "source": "fvg",
-      "side": "sell",
-      "touch_price": "1.3873399496",
-      "bounce_atr": "0.0090498924"
-    }
-  ],
+  "new_bounces": [],
   "week_reset": false,
   "symbols_added": [],
   "seeded_symbols": [],
@@ -44,30 +16,7 @@
   "errors": [],
   "data_source": "Yahoo Finance (XAUUSD via GC=F; FX via PAIR=X); not Pepperstone",
   "hist_follow_up_ok": 344,
-  "new_follow_ups": [
-    {
-      "id": "FVG-S-20261120",
-      "symbol": "HK50",
-      "date": "2026-11-24",
-      "source": "fvg",
-      "side": "sell",
-      "extreme_price": "22647.5",
-      "impulse_ok": "true",
-      "sw1_time": "2026-11-24 12:30 HKT",
-      "sw2_time": "2026-11-24 14:30 HKT"
-    },
-    {
-      "id": "FVG-S-20261123",
-      "symbol": "HK50",
-      "date": "2026-11-24",
-      "source": "fvg",
-      "side": "sell",
-      "extreme_price": "22647.5",
-      "impulse_ok": "true",
-      "sw1_time": "2026-11-24 12:30 HKT",
-      "sw2_time": "2026-11-24 14:30 HKT"
-    }
-  ],
+  "new_follow_ups": [],
   "follow_seeded": false,
   "follow_evaluated": 365
 }
