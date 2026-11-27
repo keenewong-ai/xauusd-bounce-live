@@ -1,22 +1,124 @@
 {
-  "updated_at": "2026-11-27T07:51:36+08:00",
-  "asof": "2026-11-26",
+  "updated_at": "2026-11-27T11:56:27+08:00",
+  "asof": "2026-11-27",
   "touch_start": "2026-08-27",
   "touch_end": "2026-11-27",
   "week_id": "2026-11-23",
-  "hist_rows": 566,
-  "hist_bounce_ok": 364,
-  "levels_rows": 113,
-  "new_bounces": [],
+  "hist_rows": 574,
+  "hist_bounce_ok": 371,
+  "levels_rows": 108,
+  "new_bounces": [
+    {
+      "id": "SL-20261120",
+      "symbol": "AUDNZD",
+      "date": "2026-11-25",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "1.2092000246",
+      "bounce_atr": "0.0065900087"
+    },
+    {
+      "id": "SL-20261124",
+      "symbol": "EURNZD",
+      "date": "2026-11-26",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "1.9988600016",
+      "bounce_atr": "0.0101300478"
+    },
+    {
+      "id": "SL-20261124",
+      "symbol": "GBPNZD",
+      "date": "2026-11-26",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "2.3888800144",
+      "bounce_atr": "0.011070013"
+    },
+    {
+      "id": "SL-20261123",
+      "symbol": "HK50",
+      "date": "2026-11-25",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "21998.05078125",
+      "bounce_atr": "545.69921875"
+    },
+    {
+      "id": "SL-20261106",
+      "symbol": "NZDCAD",
+      "date": "2026-11-25",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "0.7789000273",
+      "bounce_atr": "0.0045099854"
+    },
+    {
+      "id": "SL-20261123",
+      "symbol": "NZDCHF",
+      "date": "2026-11-25",
+      "source": "swing",
+      "side": "sl",
+      "touch_price": "0.4568000138",
+      "bounce_atr": "0.0021099746"
+    },
+    {
+      "id": "SH-20261124",
+      "symbol": "NZDUSD",
+      "date": "2026-11-26",
+      "source": "swing",
+      "side": "sh",
+      "touch_price": "0.5489679575",
+      "bounce_atr": "0.0026094317"
+    }
+  ],
   "week_reset": false,
-  "symbols_added": [],
+  "symbols_added": [
+    "GBPNZD",
+    "NZDCAD",
+    "NZDUSD"
+  ],
   "seeded_symbols": [],
   "seeded_bounce_ok": 0,
   "seeded_bounce_ok_by_symbol": {},
   "errors": [],
   "data_source": "Yahoo Finance (XAUUSD via GC=F; FX via PAIR=X); not Pepperstone",
-  "hist_follow_up_ok": 341,
-  "new_follow_ups": [],
+  "hist_follow_up_ok": 344,
+  "new_follow_ups": [
+    {
+      "id": "SL-20261120",
+      "symbol": "AUDNZD",
+      "date": "2026-11-25",
+      "source": "swing",
+      "side": "sl",
+      "extreme_price": "1.2015999556",
+      "impulse_ok": "true",
+      "sw1_time": "2026-11-25 20:00 HKT",
+      "sw2_time": "2026-11-25 22:00 HKT"
+    },
+    {
+      "id": "SL-20261106",
+      "symbol": "NZDCAD",
+      "date": "2026-11-25",
+      "source": "swing",
+      "side": "sl",
+      "extreme_price": "0.7760000229",
+      "impulse_ok": "true",
+      "sw1_time": "2026-11-26 06:00 HKT",
+      "sw2_time": "2026-11-26 08:00 HKT"
+    },
+    {
+      "id": "SL-20261123",
+      "symbol": "NZDCHF",
+      "date": "2026-11-25",
+      "source": "swing",
+      "side": "sl",
+      "extreme_price": "0.4523000121",
+      "impulse_ok": "true",
+      "sw1_time": "2026-11-26 12:00 HKT",
+      "sw2_time": "2026-11-26 15:00 HKT"
+    }
+  ],
   "follow_seeded": false,
-  "follow_evaluated": 362
+  "follow_evaluated": 365
 }
