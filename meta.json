@@ -1,39 +1,21 @@
 {
-  "updated_at": "2026-11-28T11:52:20+08:00",
+  "updated_at": "2026-11-28T15:50:50+08:00",
   "asof": "2026-11-28",
   "touch_start": "2026-08-28",
   "touch_end": "2026-11-28",
   "week_id": "2026-11-23",
-  "hist_rows": 574,
-  "hist_bounce_ok": 370,
-  "levels_rows": 101,
+  "hist_rows": 573,
+  "hist_bounce_ok": 369,
+  "levels_rows": 117,
   "new_bounces": [
     {
       "id": "SH-20261125",
-      "symbol": "AUDUSD",
+      "symbol": "EURNZD",
       "date": "2026-11-27",
       "source": "swing",
       "side": "sh",
-      "touch_price": "0.6662797928",
-      "bounce_atr": "0.0031058192"
-    },
-    {
-      "id": "SH-20261125",
-      "symbol": "GBPNZD",
-      "date": "2026-11-27",
-      "source": "swing",
-      "side": "sh",
-      "touch_price": "2.3986899853",
-      "bounce_atr": "0.0160598755"
-    },
-    {
-      "id": "SL-20260626",
-      "symbol": "HK50",
-      "date": "2026-11-20",
-      "source": "swing",
-      "side": "sl",
-      "touch_price": "22518",
-      "bounce_atr": "263.029296875"
+      "touch_price": "2.0070700645",
+      "bounce_atr": "0.0055701733"
     }
   ],
   "week_reset": false,
@@ -43,8 +25,42 @@
   "seeded_bounce_ok_by_symbol": {},
   "errors": [],
   "data_source": "Yahoo Finance (XAUUSD via GC=F; FX via PAIR=X); not Pepperstone",
-  "hist_follow_up_ok": 340,
-  "new_follow_ups": [],
+  "hist_follow_up_ok": 343,
+  "new_follow_ups": [
+    {
+      "id": "SL-20261124",
+      "symbol": "GBPNZD",
+      "date": "2026-11-26",
+      "source": "swing",
+      "side": "sl",
+      "extreme_price": "2.3828999996",
+      "impulse_ok": "true",
+      "sw1_time": "2026-11-27 14:00 HKT",
+      "sw2_time": "2026-11-27 17:00 HKT"
+    },
+    {
+      "id": "SH-20261124",
+      "symbol": "NZDUSD",
+      "date": "2026-11-26",
+      "source": "swing",
+      "side": "sh",
+      "extreme_price": "0.550491035",
+      "impulse_ok": "true",
+      "sw1_time": "2026-11-27 16:00 HKT",
+      "sw2_time": "2026-11-27 18:00 HKT"
+    },
+    {
+      "id": "FVG-S-20261120",
+      "symbol": "XAUUSD",
+      "date": "2026-11-23",
+      "source": "fvg",
+      "side": "sell",
+      "extreme_price": "3691",
+      "impulse_ok": "true",
+      "sw1_time": "2026-11-24 03:00 HKT",
+      "sw2_time": "2026-11-24 05:00 HKT"
+    }
+  ],
   "follow_seeded": false,
-  "follow_evaluated": 361
+  "follow_evaluated": 364
 }
